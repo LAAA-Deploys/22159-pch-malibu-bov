@@ -20,6 +20,21 @@ The APN block (4451-008) sits in **eastern Malibu**, in the Las Tunas / Topanga-
 
 ## 1. Comp sales — what's actually transacting
 
+### ★ Lead comp — 22141 PCH (same block, 2 doors east)
+
+| Field | Value |
+|---|---|
+| APN | 4451-008-018 (same book as subject 4451-008-009) |
+| Lot | **20,351 SF (0.47 ac)** — within 4% of subject's 19,612 SF |
+| Land use | Vacant residential land (no structures, no entitlements) |
+| Sold | **12/18/2017 for $4,900,000** → **$241 / land SF** |
+| Current assessed value | $5,575,361 (Prop 13 escalation off the 2017 basis) |
+| Buyer | Marthas, Aunt Chip — Toronto, Canada holding entity (long-duration land bank) |
+
+**Math:** 22141 sold raw at $241/SF in 2017. Subject at $3,000,000 / 19,612 SF = **$153/SF** — a **36% discount** to the 2017 same-block trade, before any 2017–2024 Malibu land appreciation and before crediting the subject for its preserved 8-unit MF entitlement and Ord 524 rebuild rights. This is the strongest comp in the set and supports the $3M as conservative.
+
+### Supporting reference trades
+
 True multifamily-burn-lot resales on PCH are **scarce** (most of the public transaction flow is SFR oceanfront). The relevant data points:
 
 | Comp | Detail | Read-through to 22159 |
