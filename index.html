@@ -86,7 +86,12 @@
   .scenario .s-label{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:3px;font-weight:600}
   .scenario .s-val{font-size:16px;color:#0a2540;font-weight:700}
   .scenario .s-sub{font-size:11px;color:#666;margin-top:2px}
-  .team-leaders{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:18px;max-width:680px;margin-left:auto;margin-right:auto}
+  .team-leaders{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+  .team-roster{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+  .roster-card{background:#f8fafc;border:1px solid #e6e9ef;border-radius:6px;padding:16px 10px;text-align:center}
+  .roster-card .headshot-img-lg{width:72px;height:72px;border-width:2px;margin-bottom:10px}
+  .roster-name{font-size:13px;font-weight:600;color:#0a2540;margin-bottom:2px}
+  .roster-title{font-size:11px;color:#888;letter-spacing:0.3px;line-height:1.35}
   .team-card{background:#f8fafc;border:1px solid #e6e9ef;border-radius:6px;padding:22px;border-top:3px solid #b8985a;display:flex;flex-direction:column}
   .tc-photo{text-align:center;margin-bottom:8px}
   .headshot-img-lg{width:100px;height:100px;border-radius:50%;border:3px solid #b8985a;object-fit:cover;background:#0a2540;display:block;margin:0 auto 12px}
@@ -106,7 +111,8 @@
   .tbd{display:inline-block;background:#fff4d6;color:#8a6500;border:1px dashed #d9b84a;border-radius:3px;padding:0 6px;font-style:italic;font-size:12px;font-weight:600;letter-spacing:0.2px}
   .needs-input{background:#fff9ec;border:1px solid #e6c98a;border-left:4px solid #b8985a;border-radius:6px;padding:13px 16px;margin:14px 0;font-size:12.5px;color:#7a5f1a;line-height:1.5}
   .needs-input strong{color:#7a5f1a}
-  @media (max-width:760px){.math-grid{grid-template-columns:1fr}.scenario-row{grid-template-columns:1fr}.team-leaders{grid-template-columns:1fr}.price-compare{grid-template-columns:1fr}}
+  @media (max-width:900px){.team-leaders{grid-template-columns:1fr}.team-roster{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:760px){.math-grid{grid-template-columns:1fr}.scenario-row{grid-template-columns:1fr}.team-roster{grid-template-columns:repeat(2,1fr)}.price-compare{grid-template-columns:1fr}}
   @media (max-width:640px){
     header{padding:32px 0 40px}
     h1{font-size:24px}
@@ -611,6 +617,18 @@
 
   <div class="team-leaders">
     <div class="team-card">
+      <div class="tc-photo"><img class="headshot-img-lg" src="images/headshot_glen.png" alt="Glen Scher"></div>
+      <div class="tc-name-lg">Glen Scher</div>
+      <div class="tc-title-lg">Senior Managing Director, Investments</div>
+      <p class="tc-bio">Co-founder of the LAAA Team at Marcus &amp; Millichap. A UC Santa Barbara graduate in Economics, Glen launched his career at M&amp;M in 2014 and earned Rookie of the Year from the SFV Business Journal by 2016. A former Division I golfer, he captured three collegiate titles and was named UCSB Male Athlete of the Year. He and the LAAA Team have closed over $1.4 billion in multifamily and land transactions across Los Angeles.</p>
+      <div class="tc-contact-lg">
+        <a href="tel:+18182122808" style="font-size:18px;font-weight:700;color:#0a2540;display:block;margin-bottom:6px">(818) 212-2808</a>
+        <a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a><br>
+        <span style="color:#666;font-size:12px">CalDRE #01962976</span><br>
+        <a href="https://www.laaa.com" target="_blank" rel="noopener" style="color:#b8985a;font-size:12px;font-weight:600">www.laaa.com &rarr;</a>
+      </div>
+    </div>
+    <div class="team-card">
       <div class="tc-photo"><img class="headshot-img-lg" src="images/headshot_filip.png" alt="Filip Niculete"></div>
       <div class="tc-name-lg">Filip Niculete</div>
       <div class="tc-title-lg">Senior Managing Director, Investments</div>
@@ -626,7 +644,7 @@
       <div class="tc-photo"><img class="headshot-img-lg" src="images/headshot_sev.jpg" alt="Sevak &ldquo;Sev&rdquo; Keshishian"></div>
       <div class="tc-name-lg">Sevak &ldquo;Sev&rdquo; Keshishian</div>
       <div class="tc-title-lg">Senior Managing Director, Investments</div>
-      <p class="tc-bio">Founder and leader of The SK Group at Marcus &amp; Millichap's Encino office. Since joining the firm in 2010, Sev has consistently ranked among the top producers in Greater Los Angeles and within the firm nationwide, closing 200+ commercial real estate transactions totaling more than $750 million in Southern California multifamily and development sales. A former construction manager, active investor and hands-on property manager, he brings a 360-degree view to repositioning and rebuild assignments.</p>
+      <p class="tc-bio">Founder and leader of The SK Group at Marcus &amp; Millichap's Encino office. Since joining the firm in 2010, Sev has consistently ranked among the top producers in Greater Los Angeles and within the firm nationwide, closing 237 transactions totaling $548.5 million in Southern California multifamily and development sales. A former construction manager, active investor and hands-on property manager, he brings a 360-degree view to repositioning and rebuild assignments.</p>
       <div class="tc-contact-lg">
         <a href="tel:+18182122694" style="font-size:18px;font-weight:700;color:#0a2540;display:block;margin-bottom:6px">(818) 212-2694</a>
         <a href="mailto:Sevak.Keshishian@marcusmillichap.com">Sevak.Keshishian@marcusmillichap.com</a><br>
@@ -635,6 +653,20 @@
       </div>
     </div>
   </div>
+
+  <h3 style="margin-top:32px">Supporting Team &mdash; LAAA</h3>
+  <p style="font-size:13.5px;color:#555;margin-bottom:4px">A deep bench supporting the principals: dedicated investment associates running outreach, underwriting and buyer coverage; an operations manager and licensed assistants keeping the transaction moving from list to close.</p>
+  <div class="team-roster">
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_aida.png" alt="Aida Memary"><div class="roster-name">Aida Memary</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_logan.png" alt="Logan Ward"><div class="roster-name">Logan Ward</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_morgan.png" alt="Morgan Wetmore"><div class="roster-name">Morgan Wetmore</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_luka.png" alt="Luka Leader"><div class="roster-name">Luka Leader</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_alexandro.png" alt="Alexandro Tapia"><div class="roster-name">Alexandro Tapia</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_blake.png" alt="Blake Lewitt"><div class="roster-name">Blake Lewitt</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_mike.png" alt="Mike Palade"><div class="roster-name">Mike Palade</div><div class="roster-title">Agent Assistant</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_tony.png" alt="Tony H. Dang"><div class="roster-name">Tony H. Dang</div><div class="roster-title">Business Operations Manager</div></div>
+  </div>
+  <p class="footer-note" style="margin-top:14px">Eleven full-time professionals across LAAA Team and The SK Group dedicated to this assignment &mdash; from principal coverage of the developer-buyer pool to associate-led outreach, underwriting and transaction operations.</p>
 </section>
 
 </div>
