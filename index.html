@@ -19,6 +19,11 @@
   .sub{font-size:17px;color:#cbd5e1;font-weight:400}
   .meta{margin-top:24px;display:flex;flex-wrap:wrap;gap:24px;font-size:14px;color:#a8b3c2}
   .meta div strong{display:block;color:#fff;font-size:15px;margin-bottom:2px}
+  .hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:32px;max-width:920px}
+  .hero-stat{background:rgba(255,255,255,0.07);border-left:3px solid #b8985a;padding:16px 20px;backdrop-filter:blur(4px)}
+  .hero-stat .val{font-size:26px;color:#b8985a;line-height:1.05;font-weight:700;letter-spacing:-0.3px;margin-bottom:6px}
+  .hero-stat .lbl{font-size:11px;color:rgba(255,255,255,0.78);letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
+  @media (max-width:640px){.hero-stats{grid-template-columns:repeat(2,1fr);gap:10px}.hero-stat{padding:12px 14px}.hero-stat .val{font-size:20px}}
   main{padding:48px 0 64px}
   section{background:#fff;border-radius:8px;padding:32px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.03)}
   h2{font-size:22px;font-weight:700;color:#0a2540;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid #e6e9ef}
@@ -143,11 +148,23 @@
     <div class="eyebrow">Broker Opinion of Value &middot; Confidential</div>
     <h1>22159 Pacific Coast Highway</h1>
     <div class="sub">Malibu, CA 90265 &middot; Ocean-View Multifamily Rebuild Site &middot; &plusmn;0.45 Acre</div>
-    <div class="meta">
-      <div><strong>Recommended Price</strong>$3,000,000</div>
-      <div><strong>Lot Size</strong>&plusmn;19,612 SF</div>
-      <div><strong>Use Case</strong>8-Unit Apartment Rebuild</div>
-      <div><strong>APN</strong>4451-008-009</div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="val">$3,000,000</div>
+        <div class="lbl">Recommended Price</div>
+      </div>
+      <div class="hero-stat">
+        <div class="val">8&ndash;16 Units</div>
+        <div class="lbl">Ord. 524 Rebuild &middot; ZTA-25-003 Stack</div>
+      </div>
+      <div class="hero-stat">
+        <div class="val">&plusmn;19,612 SF</div>
+        <div class="lbl">Lot Size &middot; 0.45 Acres</div>
+      </div>
+      <div class="hero-stat">
+        <div class="val">$153 / SF</div>
+        <div class="lbl">Land Basis &middot; APN 4451-008-009</div>
+      </div>
     </div>
   </div>
 </header>
