@@ -24,6 +24,15 @@
   .hero-stat .val{font-size:26px;color:#b8985a;line-height:1.05;font-weight:700;letter-spacing:-0.3px;margin-bottom:6px}
   .hero-stat .lbl{font-size:11px;color:rgba(255,255,255,0.78);letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
   @media (max-width:640px){.hero-stats{grid-template-columns:repeat(2,1fr);gap:10px}.hero-stat{padding:12px 14px}.hero-stat .val{font-size:20px}}
+  .section-nav{position:sticky;top:0;z-index:100;background:#0a2540;border-bottom:3px solid #b8985a;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
+  .section-nav .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+  .section-nav .wrap::-webkit-scrollbar{height:3px}
+  .section-nav .wrap::-webkit-scrollbar-thumb{background:#b8985a}
+  .section-nav a{flex:0 0 auto;padding:14px 18px;color:#cbd5e1;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;border-bottom:3px solid transparent;margin-bottom:-3px;transition:color 0.15s, border-color 0.15s, background 0.15s;white-space:nowrap}
+  .section-nav a:hover{color:#b8985a;background:rgba(184,152,90,0.08)}
+  .section-nav a.active{color:#b8985a;border-bottom-color:#b8985a;background:rgba(184,152,90,0.1)}
+  section[id]{scroll-margin-top:72px}
+  @media (max-width:640px){.section-nav a{padding:12px 14px;font-size:12px;letter-spacing:0.5px}}
   main{padding:48px 0 64px}
   section{background:#fff;border-radius:8px;padding:32px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.03)}
   h2{font-size:22px;font-weight:700;color:#0a2540;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid #e6e9ef}
@@ -169,6 +178,20 @@
   </div>
 </header>
 
+<nav class="section-nav" aria-label="Section navigation">
+  <div class="wrap">
+    <a href="#overview" data-section="overview">Overview</a>
+    <a href="#property" data-section="property">Property</a>
+    <a href="#opportunity" data-section="opportunity">Ord. 524</a>
+    <a href="#pathways" data-section="pathways">Pathways</a>
+    <a href="#comps" data-section="comps">Comps</a>
+    <a href="#pricing" data-section="pricing">Pricing</a>
+    <a href="#market" data-section="market">Market</a>
+    <a href="#inventory" data-section="inventory">Inventory</a>
+    <a href="#team" data-section="team">Team</a>
+  </div>
+</nav>
+
 <main>
 <div class="wrap">
 
@@ -206,7 +229,7 @@
   </div>
 </section>
 
-<section>
+<section id="property">
   <div class="hero-img" style="background-image:url('images/hero_streetview.png');background-size:cover;background-position:center"></div>
   <h2>Subject Property</h2>
   <p>22159 Pacific Coast Highway is a <strong>&plusmn;19,612 SF (0.45-acre)</strong> ocean-view parcel on the beach side of PCH in eastern Malibu (90265), within the Carbon Beach / La Costa corridor. The site previously carried an <strong>8-unit, &plusmn;5,084 SF multifamily structure</strong> with ocean views and beach access; the opportunity is offered, analyzed and priced as a <strong>development / rebuild site</strong>.</p>
@@ -255,7 +278,7 @@
   <p class="footer-note">Subject pin geocoded to 22159 Pacific Coast Highway, Malibu CA 90265. Parcel and assessor data per LA County Assessor / LightBox; pre-loss building size and unit count per public record (&plusmn;5,084 SF, 8 units). Building was destroyed in the January 2025 Palisades Fire; seller is offering the parcel as a redevelopment / Ord. 524 rebuild site. <strong>Buyer to independently verify all parcel data, square footage and rebuild eligibility.</strong></p>
 </section>
 
-<section>
+<section id="opportunity">
   <div class="section-tag">The Opportunity</div>
   <h2>Ordinance 524 Rebuild + SB 166 Density Protection</h2>
   <p>The value thesis rests on Malibu's <strong>Ordinance No. 524 &mdash; the "Disaster Rebuild Ordinance"</strong> &mdash; adopted by the Malibu City Council on <strong>March 12, 2025</strong>, with the corresponding Local Coastal Program (LCP) amendment <strong>certified by the California Coastal Commission on April 10, 2025</strong>. The ordinance establishes development standards that facilitate the rebuilding of structures destroyed or damaged in the <strong>2025 Palisades Fire, 2024 Franklin Fire and 2024 Broad Fire</strong> &mdash; and in past and future disasters.</p>
@@ -291,7 +314,7 @@
   <p class="footer-note">Source: City of Malibu Ordinance No. 524 (Disaster Rebuild Ordinance) and the Zoning Code Interpretation / Council Rebuild Policy dated 7/22/2025 (MMC &sect; 17.60.020(C); LCP LIP &sect; 13.4.6); SB 166 (Gov. Code &sect; 65863). Rebuild program per the seller's land-residual workbook. This eligibility summary is informational and does not constitute a legal opinion &mdash; buyer to confirm rebuild rights, the exact prior structure size and unit count, and CDP treatment with the City of Malibu and qualified land-use counsel.</p>
 </section>
 
-<section>
+<section id="pathways">
   <div class="section-tag">Developer Playbook</div>
   <h2>Rebuild Pathways &mdash; What a Developer Can Actually Build</h2>
   <p>A developer underwriting 22159 PCH has <strong>four viable rebuild pathways</strong>, ranging from a fast like-for-like replacement to a doors-doubling density stack under Malibu's pending ADU code update. The recommended land basis is supported even by the most conservative pathway; the upside pathways are the pitch to a sophisticated developer-buyer.</p>
@@ -363,7 +386,7 @@
   <div class="needs-input"><strong>&#9873; Confirmation items still open:</strong> (1) ZTA-25-003 adoption status / hearing date, (2) site-plan check that the 0.45 ac can physically site up to 8 detached ADUs alongside the 8-unit base, (3) parcel-side relative to PCH and FEMA Base Flood Elevation (changes the wave-action / replacement-structure exemption story).</div>
 </section>
 
-<section>
+<section id="comps">
   <h2>Comparable Sales &amp; Market Pricing</h2>
   <p>Pricing is framed against the <strong>Pacific Coast Highway land trades</strong> that establish what the parcel is worth in the corridor. Additional comparable sets &mdash; finished small-multifamily building sales and rent comparables &mdash; will be added as supplied by the listing team.</p>
 
@@ -415,7 +438,7 @@
   <p class="footer-note">Sources: 22141 PCH and 22611 PCH per LA County Assessor / LightBox (22141 sale 12/18/2017 $4,900,000; current assessed $5,575,361 / 22611 sale 7/23/2024 $1,586,500; current assessed $3,000,000); 22611 flyer per The SK Group of Marcus &amp; Millichap. <strong>Two independent PCH land trades, seven years apart, converging on $229&ndash;$241 / land SF.</strong> Additional Malibu development &amp; rebuild-lot comparables to be added as supplied by the listing team.</p>
 </section>
 
-<section>
+<section id="pricing">
   <div class="section-tag">Project Math</div>
   <h2>Land Residual &mdash; Developer's Profit Analysis</h2>
   <p>As a development / rebuild parcel, value is driven by what a developer can pay for the land and still earn a market profit on the finished 8-unit building. The model below traces the seller's land-residual workbook: build cost, the stabilized income and $9.0M finished value, and the residual land value across a profit range. All figures derive from the workbook; finished-value and rent inputs are to be validated by the listing team against Malibu apartment building sales and current market rents.</p>
@@ -501,7 +524,7 @@
   <div class="needs-input"><strong>&#9873; Note:</strong> the recommendation will be finalized against the land, finished-MF and rent comp sets once supplied by the listing team, and against confirmation of the Ordinance 524 rebuild eligibility and prior-structure size.</div>
 </section>
 
-<section>
+<section id="market">
   <h2>Market Overview &mdash; Malibu</h2>
   <p>Malibu is a 21-mile stretch of Pacific coastline in western Los Angeles County &mdash; one of the most supply-constrained and highest-value residential markets in the United States. Coastal regulation, topography and the Coastal Act sharply limit new development, making rebuild-ready, density-protected multifamily parcels exceptionally rare. The 2025 Palisades Fire, which destroyed roughly 300 buildings along Pacific Coast Highway, has further constrained near-term coastal housing supply even as Ordinance 524 streamlines the rebuild path.</p>
 
@@ -522,7 +545,7 @@
   <p class="footer-note"><span class="tbd">TBD</span> &mdash; verify Malibu demographic figures (population, household income, median values within radius) and add MMI Research Services data before delivery. Palisades Fire building-loss and Ordinance 524 application figures per City of Malibu Council Agenda Report dated 7/22/2025.</p>
 </section>
 
-<section>
+<section id="inventory">
   <div class="section-tag">LAAA Inventory</div>
   <h2>LAAA Land &amp; Development Pipeline</h2>
   <p>The LA Apartment Advisors Team maintains one of the most active land &amp; development listing practices in Southern California &mdash; <strong>19 active land / development listings</strong> spanning by-right infill sites, ED1 mixed-use, RTI projects, small-lot subdivisions and coastal rebuild opportunities. <strong>22159 Pacific Coast Highway</strong> joins that pipeline as the team's rare Malibu ocean-view rebuild parcel.</p>
@@ -578,7 +601,7 @@
   </div>
 </section>
 
-<section>
+<section id="team">
   <div class="section-tag">Exclusively Listed By</div>
   <h2>The LAAA Team &amp; The SK Group</h2>
   <p>This offering is exclusively listed by the <strong>LA Apartment Advisors (LAAA) Team</strong> and <strong>The SK Group</strong> at Marcus &amp; Millichap &mdash; among Southern California's most active multifamily and development-land investment sales practices.</p>
@@ -695,6 +718,26 @@
     L.marker(p.ll, { icon: icon(p.cls, p.lbl) }).addTo(map).bindPopup(p.pop);
   });
   map.setView([34.0391526,-118.6571357], 15);
+})();
+
+// Section nav scroll-spy
+(function(){
+  var navLinks = document.querySelectorAll('.section-nav a[data-section]');
+  if (!navLinks.length || !('IntersectionObserver' in window)) return;
+  var byId = {};
+  navLinks.forEach(function(a){ byId[a.getAttribute('data-section')] = a; });
+  var current = null;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        var id = e.target.id;
+        if (current && current !== id && byId[current]) byId[current].classList.remove('active');
+        if (byId[id]) byId[id].classList.add('active');
+        current = id;
+      }
+    });
+  }, { rootMargin: '-80px 0px -65% 0px', threshold: 0 });
+  document.querySelectorAll('section[id]').forEach(function(s){ io.observe(s); });
 })();
 </script>
 
