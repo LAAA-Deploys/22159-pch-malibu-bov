@@ -142,14 +142,14 @@
     .price-band{font-size:24px}
   }
   @media print{
-    @page{size:letter landscape;margin:0.4in}
-    html,body{background:#fff;width:auto;max-width:none}
+    @page{size:letter landscape;margin:0}
+    html,body{background:#fff;width:auto;max-width:none;margin:0;padding:0}
     body{font-size:11.5px;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-    .wrap{max-width:none;padding:0 8px}
+    .wrap{max-width:none;padding:0 24px}
     .section-nav,.pdf-float-btn,.hero-banner{display:none !important}
     /* ===== Cover page ===== */
-    .pdf-cover{display:flex !important;flex-direction:column;height:7.5in;page-break-after:always;break-after:page;background:linear-gradient(135deg,#0a2540 0%,#143b6b 100%);color:#fff;padding:0;margin:0 -0.4in;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-    .pdf-cover .cover-img{flex:0 0 4.4in;background-image:url('images/hero_streetview.png');background-size:cover;background-position:center;border-bottom:4px solid #b8985a;position:relative}
+    .pdf-cover{display:flex !important;flex-direction:column;height:8.5in;width:11in;page-break-after:always;break-after:page;background:linear-gradient(135deg,#0a2540 0%,#143b6b 100%);color:#fff;padding:0;margin:0;position:relative;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .pdf-cover .cover-img{flex:0 0 5.0in;background-image:url('images/hero_streetview.png');background-size:cover;background-position:center;border-bottom:4px solid #b8985a;position:relative}
     .pdf-cover .cover-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,37,64,0.55))}
     .pdf-cover .cover-body{flex:1;padding:18px 40px 16px;display:flex;flex-direction:column}
     .pdf-cover .cover-eyebrow{font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:#b8985a;font-weight:700;margin-bottom:8px}
@@ -165,7 +165,7 @@
     .pdf-cover .cover-broker .t{font-size:8.5px;color:#b8985a;letter-spacing:0.6px;text-transform:uppercase;font-weight:600;margin-bottom:3px}
     .pdf-cover .cover-broker .c{color:#cbd5e1}
     /* ===== Table of contents ===== */
-    .pdf-toc{display:block !important;page-break-after:always;break-after:page;padding:36px 24px 24px;background:#fff;color:#0a2540}
+    .pdf-toc{display:block !important;width:11in;height:8.5in;page-break-after:always;break-after:page;padding:48px 56px 36px;background:#fff;color:#0a2540;box-sizing:border-box}
     .pdf-toc .toc-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#b8985a;font-weight:700;margin-bottom:8px}
     .pdf-toc h2.toc-title{font-size:24px;color:#0a2540;border-bottom:3px solid #b8985a;padding-bottom:10px;margin-bottom:22px}
     .pdf-toc ol{list-style:none;counter-reset:toc;margin:0;padding:0}
@@ -806,7 +806,7 @@
 <footer>
   <div class="wrap">
     <p><strong>Marcus &amp; Millichap</strong> &middot; 16830 Ventura Boulevard, Suite 100, Encino, CA 91436 &middot; 818.212.2700</p>
-    <p>Activity ID <span class="tbd">#TBD</span> &middot; &copy; 2026 Marcus &amp; Millichap. All rights reserved.</p>
+    <p>&copy; 2026 Marcus &amp; Millichap. All rights reserved.</p>
     <p style="margin-top:12px;font-size:11px;max-width:820px;margin-left:auto;margin-right:auto;line-height:1.5">This is a Broker Price Opinion or Comparative Market Analysis of value and should not be considered an appraisal. The information contained herein has been secured from sources we believe to be reliable, but no representations or warranties, express or implied, are made as to its accuracy. References to square footage, age, zoning, unit count, and rebuild / entitlement pathway are approximate; buyer must independently verify all information and bears all responsibility for any inaccuracies. The Ordinance 524 / SB 166 rebuild-eligibility analysis is informational, is based on the cited Malibu Municipal Code, LCP and statutory provisions, and does not constitute a legal opinion. Pricing guidance is preliminary and subject to revision.</p>
   </div>
 </footer>
