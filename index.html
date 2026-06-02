@@ -146,7 +146,34 @@
     html,body{background:#fff;width:auto;max-width:none}
     body{font-size:11.5px;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
     .wrap{max-width:none;padding:0 8px}
-    .section-nav,.pdf-float-btn{display:none !important}
+    .section-nav,.pdf-float-btn,.hero-banner{display:none !important}
+    /* ===== Cover page ===== */
+    .pdf-cover{display:flex !important;flex-direction:column;height:7.5in;page-break-after:always;break-after:page;background:linear-gradient(135deg,#0a2540 0%,#143b6b 100%);color:#fff;padding:0;margin:0 -0.4in;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .pdf-cover .cover-img{flex:0 0 4.4in;background-image:url('images/hero_streetview.png');background-size:cover;background-position:center;border-bottom:4px solid #b8985a;position:relative}
+    .pdf-cover .cover-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,37,64,0.55))}
+    .pdf-cover .cover-body{flex:1;padding:18px 40px 16px;display:flex;flex-direction:column}
+    .pdf-cover .cover-eyebrow{font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:#b8985a;font-weight:700;margin-bottom:8px}
+    .pdf-cover .cover-h1{font-size:26px;font-weight:700;line-height:1.1;letter-spacing:-0.4px;margin-bottom:4px;color:#fff}
+    .pdf-cover .cover-sub{font-size:12.5px;color:#cbd5e1;margin-bottom:12px}
+    .pdf-cover .cover-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+    .pdf-cover .cover-stat{background:rgba(255,255,255,0.07);border-left:3px solid #b8985a;padding:9px 12px}
+    .pdf-cover .cover-stat .v{font-size:14px;color:#b8985a;font-weight:700;letter-spacing:-0.2px;line-height:1.1;margin-bottom:3px}
+    .pdf-cover .cover-stat .l{font-size:8.5px;color:rgba(255,255,255,0.78);letter-spacing:1.2px;text-transform:uppercase;font-weight:600}
+    .pdf-cover .cover-brokers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:auto;padding-top:12px;border-top:1px solid rgba(184,152,90,0.4)}
+    .pdf-cover .cover-broker{font-size:9.5px;line-height:1.4}
+    .pdf-cover .cover-broker .n{font-size:11px;font-weight:700;color:#fff;letter-spacing:0.2px}
+    .pdf-cover .cover-broker .t{font-size:8.5px;color:#b8985a;letter-spacing:0.6px;text-transform:uppercase;font-weight:600;margin-bottom:3px}
+    .pdf-cover .cover-broker .c{color:#cbd5e1}
+    /* ===== Table of contents ===== */
+    .pdf-toc{display:block !important;page-break-after:always;break-after:page;padding:36px 24px 24px;background:#fff;color:#0a2540}
+    .pdf-toc .toc-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#b8985a;font-weight:700;margin-bottom:8px}
+    .pdf-toc h2.toc-title{font-size:24px;color:#0a2540;border-bottom:3px solid #b8985a;padding-bottom:10px;margin-bottom:22px}
+    .pdf-toc ol{list-style:none;counter-reset:toc;margin:0;padding:0}
+    .pdf-toc ol li{counter-increment:toc;display:flex;align-items:baseline;padding:9px 0;border-bottom:1px dotted #d9dde4;font-size:12.5px}
+    .pdf-toc ol li::before{content:counter(toc,decimal-leading-zero);font-family:'IBM Plex Mono',Consolas,monospace;color:#b8985a;font-weight:700;font-size:11px;margin-right:14px;min-width:22px}
+    .pdf-toc ol li a{color:#0a2540;text-decoration:none;flex:1;font-weight:600}
+    .pdf-toc ol li .toc-desc{display:block;font-size:10.5px;font-weight:400;color:#666;margin-top:2px}
+    .pdf-toc .toc-footer{margin-top:28px;padding-top:14px;border-top:2px solid #0a2540;font-size:9.5px;color:#666;letter-spacing:0.3px;display:flex;justify-content:space-between}
     main{padding:14px 0 18px}
     header{padding:22px 0 26px;background:#0a2540 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
     h1{font-size:24px}
@@ -180,6 +207,11 @@
     #comp-map{height:280px}
     a{color:#0a4a8a;text-decoration:none}
   }
+  .hero-banner{width:100%;height:520px;background-image:url('images/hero_streetview.png');background-size:cover;background-position:center;background-color:#0a2540;border-bottom:4px solid #b8985a;position:relative}
+  .hero-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,37,64,0.35))}
+  @media (max-width:760px){.hero-banner{height:320px}}
+  @media (max-width:640px){.hero-banner{height:220px}}
+  .pdf-cover,.pdf-toc{display:none}
   .pdf-float-btn{position:fixed;bottom:24px;right:24px;z-index:9999;padding:14px 28px;background:#b8985a;color:#0a2540;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.35);display:flex;align-items:center;gap:8px;transition:background .14s ease,transform .14s ease}
   .pdf-float-btn:hover{background:#fff;transform:translateY(-2px)}
   .pdf-float-btn svg{width:18px;height:18px;fill:currentColor}
@@ -195,6 +227,47 @@
   <svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z"/></svg>
   Download PDF
 </a>
+
+<!-- ===== PDF Cover (print only) ===== -->
+<div class="pdf-cover">
+  <div class="cover-img"></div>
+  <div class="cover-body">
+    <div class="cover-eyebrow">Broker Opinion of Value &middot; Confidential</div>
+    <div class="cover-h1">22159 Pacific Coast Highway</div>
+    <div class="cover-sub">Malibu, CA 90265 &middot; Ocean-View Multifamily Rebuild Site &middot; &plusmn;0.45 Acre</div>
+    <div class="cover-stats">
+      <div class="cover-stat"><div class="v">$3,000,000</div><div class="l">Recommended Price</div></div>
+      <div class="cover-stat"><div class="v">8&ndash;16 Units</div><div class="l">Ord. 524 &middot; ZTA-25-003</div></div>
+      <div class="cover-stat"><div class="v">&plusmn;19,612 SF</div><div class="l">Lot &middot; 0.45 Acres</div></div>
+      <div class="cover-stat"><div class="v">$153 / SF</div><div class="l">APN 4451-008-009</div></div>
+    </div>
+    <div class="cover-brokers">
+      <div class="cover-broker"><div class="t">LAAA Team</div><div class="n">Glen Scher</div><div class="c">(818) 212-2808 &middot; Glen.Scher@marcusmillichap.com &middot; CalDRE #01962976</div></div>
+      <div class="cover-broker"><div class="t">LAAA Team</div><div class="n">Filip Niculete</div><div class="c">(818) 212-2748 &middot; Filip.Niculete@marcusmillichap.com &middot; CalDRE #01905352</div></div>
+      <div class="cover-broker"><div class="t">The SK Group</div><div class="n">Sevak &ldquo;Sev&rdquo; Keshishian</div><div class="c">(818) 212-2694 &middot; Sevak.Keshishian@marcusmillichap.com &middot; CalDRE #01887505</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PDF Table of Contents (print only) ===== -->
+<div class="pdf-toc">
+  <div class="toc-eyebrow">Broker Opinion of Value</div>
+  <h2 class="toc-title">Table of Contents</h2>
+  <ol>
+    <li><a href="#overview">Investment Overview<span class="toc-desc">Rare ocean-view PCH rebuild site; 8 units protected; Ord. 524 framework</span></a></li>
+    <li><a href="#property">Subject Property &amp; Assessor Record<span class="toc-desc">Parcel data, lot size, pre-loss building, owner of record</span></a></li>
+    <li><a href="#opportunity">Ordinance 524 Rebuild + SB 166 Density Protection<span class="toc-desc">Like-for-like + 10%; CDP relief; no-net-loss density</span></a></li>
+    <li><a href="#pathways">Rebuild Pathways &mdash; The Developer Playbook<span class="toc-desc">5 pathways: like-for-like, full CDP, ADU density stack (8&rarr;16 doors), state bonus</span></a></li>
+    <li><a href="#comps">Comparable Sales &amp; Market Pricing<span class="toc-desc">22141 PCH same-block ($241/SF) and 22611 PCH ($229/SF) anchor the corridor</span></a></li>
+    <li><a href="#pricing">Land Residual &mdash; Developer's Profit Analysis<span class="toc-desc">$9.0M stabilized exit, ~$3.3M build cost, ~21% developer profit at $3.0M land</span></a></li>
+    <li><a href="#pricing">Pricing Recommendation<span class="toc-desc">$3,000,000 / $153 land SF &mdash; three converging value anchors</span></a></li>
+    <li><a href="#market">Market Overview &mdash; Malibu<span class="toc-desc">21-mile coast, severe supply constraint, Ord. 524 rebuild momentum</span></a></li>
+    <li><a href="#inventory">LAAA Land &amp; Development Pipeline<span class="toc-desc">19 active land/dev listings, 1,531+ buildable units, $83M+ aggregate</span></a></li>
+    <li><a href="#team">Exclusively Listed By &mdash; LAAA Team &amp; The SK Group<span class="toc-desc">18 full-time professionals: 3 principals + 8 LAAA support + 7 SK Group support</span></a></li>
+  </ol>
+  <div class="toc-footer"><span>22159 PCH Broker Opinion of Value &middot; Confidential</span><span>Marcus &amp; Millichap &middot; LAAA Team &amp; The SK Group</span></div>
+</div>
+
 <header>
   <div class="wrap">
     <div class="eyebrow">Broker Opinion of Value &middot; Confidential</div>
@@ -220,6 +293,8 @@
     </div>
   </div>
 </header>
+
+<div class="hero-banner" role="img" aria-label="22159 Pacific Coast Highway — site Street View"></div>
 
 <nav class="section-nav" aria-label="Section navigation">
   <div class="wrap">
@@ -273,7 +348,6 @@
 </section>
 
 <section id="property">
-  <div class="hero-img" style="background-image:url('images/hero_streetview.png');background-size:cover;background-position:center"></div>
   <h2>Subject Property</h2>
   <p>22159 Pacific Coast Highway is a <strong>&plusmn;19,612 SF (0.45-acre)</strong> ocean-view parcel on the beach side of PCH in eastern Malibu (90265), within the Carbon Beach / La Costa corridor. The site previously carried an <strong>8-unit, &plusmn;5,084 SF multifamily structure</strong> with ocean views and beach access; the opportunity is offered, analyzed and priced as a <strong>development / rebuild site</strong>.</p>
 
