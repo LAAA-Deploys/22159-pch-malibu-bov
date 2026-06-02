@@ -146,12 +146,21 @@
     section{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid}
     header{background:#0a2540 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   }
+  .pdf-float-btn{position:fixed;bottom:24px;right:24px;z-index:9999;padding:14px 28px;background:#b8985a;color:#0a2540;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.35);display:flex;align-items:center;gap:8px;transition:background .14s ease,transform .14s ease}
+  .pdf-float-btn:hover{background:#fff;transform:translateY(-2px)}
+  .pdf-float-btn svg{width:18px;height:18px;fill:currentColor}
+  @media (max-width:640px){.pdf-float-btn{padding:10px 18px;font-size:12px;bottom:16px;right:16px}}
+  @media print{.pdf-float-btn{display:none !important}.section-nav{display:none !important}}
   footer{background:#0a2540;color:#a8b3c2;padding:32px 0;text-align:center;font-size:13px;border-top:4px solid #b8985a}
   footer .wrap p{margin-bottom:6px}
   footer strong{color:#fff}
 </style>
 </head>
 <body>
+<a href="22159-pch-malibu-bov.pdf" class="pdf-float-btn" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z"/></svg>
+  Download PDF
+</a>
 <header>
   <div class="wrap">
     <div class="eyebrow">Broker Opinion of Value &middot; Confidential</div>
