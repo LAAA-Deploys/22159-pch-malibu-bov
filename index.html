@@ -126,6 +126,63 @@
   .tbd{display:inline-block;background:#fff4d6;color:#8a6500;border:1px dashed #d9b84a;border-radius:3px;padding:0 6px;font-style:italic;font-size:12px;font-weight:600;letter-spacing:0.2px}
   .needs-input{background:#fff9ec;border:1px solid #e6c98a;border-left:4px solid #b8985a;border-radius:6px;padding:13px 16px;margin:14px 0;font-size:12.5px;color:#7a5f1a;line-height:1.5}
   .needs-input strong{color:#7a5f1a}
+  /* ===== Pathway cards (colored gradient ladder) ===== */
+  .path-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0 8px}
+  .path-card{border:1px solid #e6e9ef;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+  .path-card .ph{padding:16px 18px;color:#fff}
+  .path-card.pa .ph{background:linear-gradient(135deg,#0a2540,#143b6b)}
+  .path-card.pb .ph{background:linear-gradient(135deg,#3a4a6b,#5a6f9a)}
+  .path-card.pc .ph{background:linear-gradient(135deg,#5a4a1f,#8a6f2a)}
+  .path-card.pd .ph{background:linear-gradient(135deg,#1f5e3a,#2f8a55)}
+  .path-card.pe .ph{background:linear-gradient(135deg,#6b3a3a,#8a4a4a)}
+  .path-card .ph .ptag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;opacity:.88;margin-bottom:6px}
+  .path-card .ph .pname{font-size:17px;font-weight:700;line-height:1.2}
+  .path-card .ph .punits{font-size:13px;opacity:.92;margin-top:4px}
+  .path-card .pb-body{padding:16px 20px;font-size:13px;flex:1}
+  .path-card .pb-body ul{margin:0 0 0 18px}
+  .path-card .pb-body li{margin-bottom:7px;line-height:1.5}
+  .path-card .pmetric{display:flex;justify-content:space-between;gap:10px;padding:9px 20px;border-top:1px solid #e6e9ef;font-size:12px}
+  .path-card .pmetric .l{color:#666}
+  .path-card .pmetric .v{font-weight:600;color:#0a2540;text-align:right}
+  .info-callout{background:#f4f7fb;border:1px solid #d6e0ef;border-left:4px solid #0a4a8a;border-radius:6px;padding:13px 16px;margin:16px 0 4px;font-size:12.5px;color:#33414f;line-height:1.55}
+  .info-callout strong{color:#0a2540}
+  /* ===== Interactive Project Math calculator ===== */
+  .calc-assume{background:#f8fafc;border:1px solid #e6e9ef;border-radius:8px;padding:16px 18px;margin:16px 0}
+  .calc-assume .ca-title{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#0a2540;font-weight:700;margin-bottom:12px}
+  .calc-assume .ca-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+  .calc-field{display:flex;flex-direction:column;gap:4px}
+  .calc-field label{font-size:10px;color:#666;text-transform:uppercase;letter-spacing:0.3px;font-weight:600;line-height:1.3}
+  .calc-field .inwrap{display:flex;align-items:center;background:#fff;border:1px solid #cdd5e0;border-radius:5px;padding:0 8px}
+  .calc-field .inwrap:focus-within{border-color:#b8985a;box-shadow:0 0 0 2px rgba(184,152,90,0.18)}
+  .calc-field .inwrap .pre,.calc-field .inwrap .post{color:#999;font-size:12px;flex:none}
+  .calc-field input{border:0;outline:0;width:100%;padding:8px 4px;font-size:13.5px;color:#0a2540;font-weight:600;font-family:inherit;text-align:right;background:transparent;-moz-appearance:textfield}
+  .calc-field input::-webkit-outer-spin-button,.calc-field input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+  .calc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 8px}
+  .calc-col{border:1px solid #e6e9ef;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+  .calc-col .cc-head{padding:14px 16px;color:#fff}
+  .calc-col.s1 .cc-head{background:linear-gradient(135deg,#0a2540,#143b6b)}
+  .calc-col.s2 .cc-head{background:linear-gradient(135deg,#3a4a6b,#5a6f9a)}
+  .calc-col.s3 .cc-head{background:linear-gradient(135deg,#5a4a1f,#8a6f2a)}
+  .calc-col .cc-head .cc-tag{font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;opacity:.88}
+  .calc-col .cc-head .cc-name{font-size:16px;font-weight:700;line-height:1.2;margin-top:3px}
+  .calc-col .cc-head .cc-base{display:inline-block;margin-top:7px;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;background:rgba(255,255,255,0.2);padding:2px 8px;border-radius:8px}
+  .calc-col .cc-inputs{padding:14px 16px;background:#fafbfc;border-bottom:1px solid #e6e9ef}
+  .calc-col .cc-inputs .calc-field{margin-bottom:10px}
+  .calc-col .cc-inputs .calc-field:last-child{margin-bottom:0}
+  .calc-col .cc-subhd{font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:#8a6f2a;font-weight:700;margin:14px 0 10px;padding-top:10px;border-top:1px dashed #d9dde4}
+  .calc-col .cc-out{padding:12px 16px}
+  .calc-col .cc-out .or{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dotted #e0e4ea;font-size:12.5px}
+  .calc-col .cc-out .or:last-child{border-bottom:none}
+  .calc-col .cc-out .or .l{color:#666}
+  .calc-col .cc-out .or .v{font-weight:600;color:#0a2540}
+  .calc-col .cc-profit{margin-top:auto;padding:13px 16px;background:#f0f7f2;border-top:1px solid #d6e8da}
+  .calc-col .cc-profit .pl{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#1f6b35;font-weight:700}
+  .calc-col .cc-profit .pv{font-size:21px;font-weight:700;color:#1f6b35;line-height:1.1;margin-top:2px}
+  .calc-col .cc-profit .ps{font-size:11.5px;color:#4a7a55;margin-top:2px}
+  .calc-reset{display:inline-block;margin-top:4px;font-size:12px;color:#0a4a8a;background:none;border:1px solid #cdd5e0;border-radius:5px;padding:7px 16px;cursor:pointer;font-family:inherit;font-weight:600}
+  .calc-reset:hover{border-color:#0a4a8a;background:#f4f7fb}
+  @media (max-width:760px){.calc-grid{grid-template-columns:1fr}}
+  @media print{.calc-reset{display:none}.calc-field .inwrap{border-color:#cdd5e0 !important;box-shadow:none !important}.calc-col,.calc-assume{break-inside:avoid}}
   @media (max-width:900px){.team-leaders{grid-template-columns:1fr}.team-roster{grid-template-columns:repeat(3,1fr)}}
   @media (max-width:760px){.math-grid{grid-template-columns:1fr}.scenario-row{grid-template-columns:1fr}.team-roster{grid-template-columns:repeat(2,1fr)}.price-compare{grid-template-columns:1fr}}
   @media (max-width:640px){
@@ -181,7 +238,7 @@
     .hero-stat .val{font-size:17px}
     .hero-stat .lbl{font-size:9.5px}
     section{box-shadow:none;border:1px solid #ddd;padding:18px 22px;margin-bottom:14px;page-break-inside:avoid;break-inside:avoid}
-    section.large-block,section#pricing,section#pathways,section#inventory,section#team{page-break-inside:auto;break-inside:auto}
+    section.large-block,section#pricing,section#profit,section#pathways,section#inventory,section#team{page-break-inside:auto;break-inside:auto}
     h2{font-size:17px;padding-bottom:8px;margin-bottom:10px}
     h3{font-size:12px;margin:12px 0 6px}
     p,li,td,th{font-size:11px}
@@ -258,6 +315,7 @@
     <li><a href="#pathways">Rebuild Pathways &mdash; The Developer Playbook<span class="toc-desc">5 pathways: like-for-like, full CDP, ADU density stack (8&rarr;16 doors), state bonus</span></a></li>
     <li><a href="#comps">Comparable Sales &amp; Market Pricing<span class="toc-desc">22141 PCH same-block ($241/SF) and 22611 PCH ($229/SF) anchor the corridor</span></a></li>
     <li><a href="#pricing">Land Residual &mdash; Developer's Profit Analysis<span class="toc-desc">$9.0M stabilized exit, ~$3.3M build cost, ~21% developer profit at $3.0M land</span></a></li>
+    <li><a href="#profit">Interactive Project Math<span class="toc-desc">Editable model &mdash; by-right, +10% fire rebuild, and ADU addition (8&rarr;16 doors)</span></a></li>
     <li><a href="#pricing">Pricing Recommendation<span class="toc-desc">$3,000,000 / $153 land SF &mdash; three converging value anchors</span></a></li>
     <li><a href="#market">Market Overview &mdash; Malibu<span class="toc-desc">21-mile coast, severe supply constraint, Ord. 524 rebuild momentum</span></a></li>
     <li><a href="#inventory">LAAA Land &amp; Development Pipeline<span class="toc-desc">19 active land/dev listings, 1,531+ buildable units, $83M+ aggregate</span></a></li>
@@ -302,6 +360,7 @@
     <a href="#pathways" data-section="pathways">Pathways</a>
     <a href="#comps" data-section="comps">Comps</a>
     <a href="#pricing" data-section="pricing">Pricing</a>
+    <a href="#profit" data-section="profit">Profit</a>
     <a href="#market" data-section="market">Market</a>
     <a href="#inventory" data-section="inventory">Inventory</a>
     <a href="#team" data-section="team">Team</a>
@@ -314,29 +373,30 @@
 <section id="overview">
   <div class="section-tag">Investment Overview</div>
   <h2>A Rare Ocean-View Multifamily Rebuild Site on Pacific Coast Highway</h2>
-  <p style="font-size:16px;line-height:1.65;color:#1a1a1a;margin-bottom:18px"><strong>The LA Apartment Advisors Team and The SK Group at Marcus &amp; Millichap</strong> are proud to present <strong>22159 Pacific Coast Highway</strong>, a rare opportunity to acquire a <strong>&plusmn;0.45-acre (19,612 SF) ocean-view multifamily rebuild parcel</strong> on the most supply-constrained stretch of California coastline. The site previously carried an <strong>eight-unit, &plusmn;5,084 SF apartment building</strong> destroyed in the January 2025 Palisades Fire. A buyer steps into an entitled rebuild &mdash; <strong>eight residential units preserved under SB 166's No-Net-Loss protection</strong>, with the rebuild itself governed by <strong>Malibu's Ordinance 524 Disaster Rebuild framework</strong> allowing like-for-like replacement plus a 10% bonus on height, bulk and floor area.</p>
+  <p style="font-size:16px;line-height:1.65;color:#1a1a1a;margin-bottom:18px">The LA Apartment Advisors Team and The SK Group at Marcus &amp; Millichap are proud to present 22159 Pacific Coast Highway, a rare opportunity to acquire a &plusmn;0.45-acre (19,612 SF) ocean-view multifamily rebuild parcel on the most supply-constrained stretch of California coastline. The site previously carried an eight-unit, &plusmn;5,084 SF apartment building destroyed in the January 2025 Palisades Fire. A buyer steps into an entitled rebuild &mdash; eight residential units preserved under SB 166's No-Net-Loss protection, with the rebuild itself governed by Malibu's Ordinance 524 Disaster Rebuild framework allowing like-for-like replacement plus a 10% bonus on height, bulk and floor area.</p>
   <p>22159 PCH sits in the Carbon Beach / La Costa corridor of eastern Malibu, a coastal segment where vacant or rebuild-ready multifamily land is exceptionally rare. The site offers durable ocean views, immediate proximity to the beach, and direct access to one of the highest-rent submarkets in Los Angeles County. Multifamily zoning is preserved through the rebuild; the buyer captures an eight-unit by-right pathway in a market where new ground-up multifamily development is effectively constrained by the Coastal Act and the City of Malibu's Local Coastal Program.</p>
-  <p>Pricing is anchored on the corridor's two most relevant land comparables: <strong>22141 PCH</strong> &mdash; the same-block, same-APN-book trade, two doors east of the subject &mdash; sold as raw vacant land in 2017 for $4,900,000 ($241 / land SF). <strong>22611 PCH</strong>, a 2024 commercial-land trade roughly five blocks east, closed at $1,586,500 ($229 / land SF). Two independent PCH land trades, seven years apart, converge in a tight bracket of <strong>$229&ndash;$241 / land SF</strong>.</p>
-  <p>At an asking price of <strong>$3,000,000</strong>, the offering prices the parcel at <strong>$153 / land SF</strong> &mdash; a meaningful discount to the same-block comp, consistent with the post-fire distress haircut documented across the corridor, and <em>before</em> crediting the subject's preserved 8-unit MF entitlement and the unique Ord. 524 rebuild rights that did not exist when those comps traded. Under the rebuild program, a developer delivers a stabilized eight-unit, &plusmn;5,592 SF building for approximately $3.3M of cost plus carry and exits at a $9.0M finished value &mdash; leaving roughly <strong>$1.79M of developer profit (~21% on total cost)</strong>. With Malibu's pending ZTA-25-003 ADU code update, the same parcel can support a density stack of <strong>up to 16 doors</strong> at the same land basis. The recommendation is conservative-to-defensible on the downside, with material step-up potential in negotiation.</p>
+  <p>Pricing is anchored on the corridor's two most relevant land comparables: 22141 PCH &mdash; the same-block, same-APN-book trade, two doors east of the subject &mdash; sold as raw vacant land in 2017 for $4,900,000 ($241 / land SF); and 22611 PCH, a 2024 commercial-land trade roughly five blocks east, which closed at $1,586,500 ($229 / land SF). Two independent PCH land trades, seven years apart, converge in a tight bracket of $229&ndash;$241 / land SF.</p>
+  <p>At an asking price of <strong>$3,000,000</strong>, the offering prices the parcel at $153 / land SF &mdash; a meaningful discount to the same-block comp, consistent with the post-fire distress haircut documented across the corridor, and before crediting the subject's preserved 8-unit MF entitlement and the unique Ord. 524 rebuild rights that did not exist when those comps traded. Under the rebuild program, a developer delivers a stabilized eight-unit, &plusmn;5,592 SF building for approximately $3.3M of cost plus carry and exits at a $9.0M finished value &mdash; leaving roughly $1.79M of developer profit (~21% on the sellout). With Malibu's pending ZTA-25-003 ADU code update, the same parcel can support a density stack of up to 16 doors at the same land basis. The recommendation is conservative-to-defensible on the downside, with material step-up potential in negotiation.</p>
 </section>
 
 <section>
   <h2>Executive Summary</h2>
-  <p>The <strong>LA Apartment Advisors (LAAA) Team</strong> and <strong>The SK Group</strong> at Marcus &amp; Millichap are pleased to present <strong>22159 Pacific Coast Highway</strong> &mdash; a <strong>&plusmn;19,612-square-foot (0.45-acre) ocean-view development / rebuild parcel</strong> on the beach side of Pacific Coast Highway in Malibu's coveted Carbon Beach / La Costa corridor. The site is offered and priced <strong>as a development opportunity</strong>, positioned around the rebuild of an <strong>8-unit apartment building</strong> under Malibu's <strong>Ordinance 524 Disaster Rebuild</strong> framework.</p>
-  <p>The property previously carried an <strong>8-unit multifamily structure (&plusmn;5,084 SF)</strong>. Under Malibu's Ordinance 524 the structure may be rebuilt <strong>like-for-like plus 10%</strong> &mdash; an 8-unit, <strong>&plusmn;5,592 SF</strong> envelope &mdash; with the multifamily density protected by California's <strong>SB 166 (No Net Loss)</strong> statute. A finished, stabilized 8-unit apartment building on this ocean-view PCH frontage is modeled at a <strong>$9.0M sellout value</strong>, supporting a recommended land value of <strong>$3,000,000</strong>.</p>
-  <p>The pre-loss structure was a <strong>1949-vintage 8-unit walk-up</strong> destroyed in the <strong>January 2025 Palisades Fire</strong> &mdash; squarely within the population of properties Ordinance 524 was written to facilitate. The seller is bringing the parcel to market as a redevelopment / rebuild opportunity; buyer to confirm rebuild eligibility, prior structure size and CDP treatment with the City of Malibu and qualified land-use counsel.</p>
+  <p>The LA Apartment Advisors (LAAA) Team and The SK Group at Marcus &amp; Millichap are pleased to present 22159 Pacific Coast Highway &mdash; a &plusmn;19,612-square-foot (0.45-acre) ocean-view development / rebuild parcel on the beach side of Pacific Coast Highway in Malibu's coveted Carbon Beach / La Costa corridor. The site is offered and priced as a development opportunity, positioned around the rebuild of an 8-unit apartment building under Malibu's Ordinance 524 Disaster Rebuild framework.</p>
+  <p>The property previously carried an 8-unit multifamily structure (&plusmn;5,084 SF). Under Malibu's Ordinance 524 the structure may be rebuilt like-for-like plus 10% &mdash; an 8-unit, &plusmn;5,592 SF envelope &mdash; with the multifamily density protected by California's SB 166 (No Net Loss) statute. A finished, stabilized 8-unit apartment building on this ocean-view PCH frontage is modeled at a $9.0M sellout value, supporting a recommended land value of <strong>$3,000,000</strong>.</p>
+  <p>The pre-loss structure was a 1949-vintage 8-unit walk-up destroyed in the January 2025 Palisades Fire &mdash; squarely within the population of properties Ordinance 524 was written to facilitate. The seller is bringing the parcel to market as a redevelopment / rebuild opportunity; buyer to confirm rebuild eligibility, prior structure size and CDP treatment with the City of Malibu and qualified land-use counsel.</p>
   <div class="takeaways">
     <div class="tk">
       <div class="tk-num">FINDING 01</div>
-      <div class="tk-text"><strong>Ordinance 524 rebuild rights.</strong> Malibu's Disaster Rebuild Ordinance (adopted 3/12/2025; LCP amendment certified 4/10/2025) lets a destroyed structure be replaced <strong>like-for-like plus 10%</strong> of height, bulk and floor area &mdash; here, an 8-unit, &plusmn;5,592 SF building.</div>
+      <div class="tk-text"><strong>Ordinance 524 rebuild rights.</strong> Malibu's Disaster Rebuild Ordinance (adopted 3/12/2025; LCP amendment certified 4/10/2025) lets a destroyed structure be replaced like-for-like plus 10% of height, bulk and floor area &mdash; here, an 8-unit, &plusmn;5,592 SF building.</div>
     </div>
     <div class="tk">
       <div class="tk-num">FINDING 02</div>
-      <div class="tk-text"><strong>8-unit density protected.</strong> California's <strong>SB 166 "No Net Loss"</strong> statute restricts down-conversion of multifamily density &mdash; preserving the site's 8-unit residential capacity through the rebuild.</div>
+      <div class="tk-text"><strong>8-unit density protected.</strong> California's SB 166 "No Net Loss" statute restricts down-conversion of multifamily density &mdash; preserving the site's 8-unit residential capacity through the rebuild.</div>
     </div>
     <div class="tk">
       <div class="tk-num">FINDING 03</div>
       <div class="tk-text"><strong>$9.0M finished value vs. ~$3.3M cost.</strong> A stabilized 8-unit apartment building (&plusmn;5,592 SF, $383,592 NOI) is modeled at a $9.0M sellout against ~$3.3M of development cost &mdash; the spread that underwrites the land value.</div>
+
     </div>
     <div class="tk">
       <div class="tk-num">FINDING 04</div>
@@ -347,7 +407,7 @@
 
 <section id="property">
   <h2>Subject Property</h2>
-  <p>22159 Pacific Coast Highway is a <strong>&plusmn;19,612 SF (0.45-acre)</strong> ocean-view parcel on the beach side of PCH in eastern Malibu (90265), within the Carbon Beach / La Costa corridor. The site previously carried an <strong>8-unit, &plusmn;5,084 SF multifamily structure</strong> with ocean views and beach access; the opportunity is offered, analyzed and priced as a <strong>development / rebuild site</strong>.</p>
+  <p>22159 Pacific Coast Highway is a &plusmn;19,612 SF (0.45-acre) ocean-view parcel on the beach side of PCH in eastern Malibu (90265), within the Carbon Beach / La Costa corridor. The site previously carried an 8-unit, &plusmn;5,084 SF multifamily structure with ocean views and beach access; the opportunity is offered, analyzed and priced as a development / rebuild site.</p>
 
   <div class="specs-grid">
     <div class="spec"><div class="spec-label">Lot Size</div><div class="spec-value">&plusmn;19,612 SF<br><span style="font-weight:400;font-size:13px;color:#666">&plusmn;0.45 acres</span></div></div>
@@ -396,18 +456,18 @@
 <section id="opportunity">
   <div class="section-tag">The Opportunity</div>
   <h2>Ordinance 524 Rebuild + SB 166 Density Protection</h2>
-  <p>The value thesis rests on Malibu's <strong>Ordinance No. 524 &mdash; the "Disaster Rebuild Ordinance"</strong> &mdash; adopted by the Malibu City Council on <strong>March 12, 2025</strong>, with the corresponding Local Coastal Program (LCP) amendment <strong>certified by the California Coastal Commission on April 10, 2025</strong>. The ordinance establishes development standards that facilitate the rebuilding of structures destroyed or damaged in the <strong>2025 Palisades Fire, 2024 Franklin Fire and 2024 Broad Fire</strong> &mdash; and in past and future disasters.</p>
+  <p>The value thesis rests on Malibu's Ordinance No. 524 &mdash; the "Disaster Rebuild Ordinance" &mdash; adopted by the Malibu City Council on March 12, 2025, with the corresponding Local Coastal Program (LCP) amendment certified by the California Coastal Commission on April 10, 2025. The ordinance establishes development standards that facilitate the rebuilding of structures destroyed or damaged in the 2025 Palisades Fire, 2024 Franklin Fire and 2024 Broad Fire &mdash; and in past and future disasters.</p>
 
   <span class="pathway-tag">Rebuild Right</span>
   <h3 style="margin-top:4px">Like-for-Like Plus 10%</h3>
-  <p>Under <strong>LCP Local Implementation Plan (LIP) Section 13.4.6</strong> and <strong>Malibu Municipal Code (MMC) Section 17.60.020(C)</strong>, a structure destroyed in a natural disaster may be replaced with up to an <strong>additional 10 percent of height, bulk and floor area</strong> over the prior structure, provided the replacement is a lawfully-erected use sited in substantially the same location (within 50% of the previous footprint and envelope). Applied to the prior &plusmn;5,084 SF structure, this supports a rebuild envelope of approximately <strong>&plusmn;5,592 SF</strong>.</p>
+  <p>Under LCP Local Implementation Plan (LIP) Section 13.4.6 and Malibu Municipal Code (MMC) Section 17.60.020(C), a structure destroyed in a natural disaster may be replaced with up to an additional 10 percent of height, bulk and floor area over the prior structure, provided the replacement is a lawfully-erected use sited in substantially the same location (within 50% of the previous footprint and envelope). Applied to the prior &plusmn;5,084 SF structure, this supports a rebuild envelope of approximately &plusmn;5,592 SF.</p>
 
   <div class="sb-callout">
     <h3>Why 22159 PCH Supports the 8-Unit Rebuild</h3>
-    <p><strong>1. Like-for-like + 10% on floor area.</strong> Ordinance 524 permits replacing a destroyed structure with +10% height, bulk and square footage. The prior &plusmn;5,084 SF structure &times; 110% &asymp; <strong>&plusmn;5,592 SF</strong> &mdash; the exact envelope modeled for the 8-unit rebuild.</p>
-    <p><strong>2. Multifamily density is protected.</strong> California's <strong>SB 166 "No Net Loss"</strong> law restricts a jurisdiction from reducing residential density below the level used for housing-element compliance &mdash; preserving the site's <strong>8-unit</strong> residential capacity through the rebuild.</p>
+    <p><strong>1. Like-for-like + 10% on floor area.</strong> Ordinance 524 permits replacing a destroyed structure with +10% height, bulk and square footage. The prior &plusmn;5,084 SF structure &times; 110% &asymp; &plusmn;5,592 SF &mdash; the exact envelope modeled for the 8-unit rebuild.</p>
+    <p><strong>2. Multifamily density is protected.</strong> California's SB 166 "No Net Loss" law restricts a jurisdiction from reducing residential density below the level used for housing-element compliance &mdash; preserving the site's 8-unit residential capacity through the rebuild.</p>
     <p><strong>3. CDP relief for in-kind replacement.</strong> A replacement that (1) is for the same use, (2) does not exceed the prior floor area, height or bulk by more than 10%, and (3) is sited in substantially the same location is treated as exempt from a separate Coastal Development Permit &mdash; streamlining the rebuild timeline.</p>
-    <p><strong>4. A precedented, active program.</strong> As of July 2025 the City reported <strong>32 rebuild applications approved in the planning phase</strong> under the ordinance &mdash; an established, working pathway, not a theoretical one.</p>
+    <p><strong>4. A precedented, active program.</strong> As of July 2025 the City reported 32 rebuild applications approved in the planning phase under the ordinance &mdash; an established, working pathway, not a theoretical one.</p>
   </div>
 
   <h3>Modeled Rebuild Program</h3>
@@ -432,70 +492,79 @@
 <section id="pathways">
   <div class="section-tag">Developer Playbook</div>
   <h2>Rebuild Pathways &mdash; What a Developer Can Actually Build</h2>
-  <p>A developer underwriting 22159 PCH has <strong>four viable rebuild pathways</strong>, ranging from a fast like-for-like replacement to a doors-doubling density stack under Malibu's pending ADU code update. The recommended land basis is supported even by the most conservative pathway; the upside pathways are the pitch to a sophisticated developer-buyer.</p>
+  <p>A developer underwriting 22159 PCH has four viable rebuild pathways, ranging from a fast like-for-like replacement to a doors-doubling density stack under Malibu's pending ADU code update. The recommended land basis is supported even by the most conservative pathway; the upside pathways are the pitch to a sophisticated developer-buyer. The cards below escalate by density and entitlement complexity.</p>
 
-  <div class="scroll">
-  <table>
-    <thead>
-      <tr><th>Pathway</th><th>Doors</th><th>Envelope</th><th>Approval</th><th>Fees</th><th>Timeline</th><th>Best For</th></tr>
-    </thead>
-    <tbody>
-      <tr style="background:#e8f4ea">
-        <td><strong>A. Like-for-like + 10%</strong><br><span class="footer-note">Ord. 524 exemption track</span></td>
-        <td><strong>8</strong></td>
-        <td>~5,592 SF<br>same footprint</td>
-        <td>Planning Verification or Admin Plan Review &middot; <strong>CDP-exempt</strong></td>
-        <td>from $200</td>
-        <td><strong>1 wk &ndash; 6 mo</strong></td>
-        <td>Fastest path &mdash; rebuild &amp; lease or rebuild &amp; flip permits</td>
-      </tr>
-      <tr>
-        <td><strong>B. Full CDP / expanded redesign</strong><br><span class="footer-note">&gt;110% or relocated footprint</span></td>
-        <td>8 redesigned</td>
-        <td>Footprint relocation, larger SF, new layout</td>
-        <td>Coastal Development Permit &middot; public hearing</td>
-        <td>~$11,579 base planning fee</td>
-        <td>12&ndash;24 mo</td>
-        <td>Luxury redesign, condo product, repositioned envelope</td>
-      </tr>
-      <tr style="background:#fff7e6">
-        <td><strong>C. 8 base + detached ADUs</strong><br><span class="footer-note">Pending Malibu ZTA-25-003</span></td>
-        <td>up to <strong>16</strong></td>
-        <td>8 MF base + up to 8 detached ADUs</td>
-        <td>60-day CDP per ADU &middot; no public hearing &middot; no Coastal appeal</td>
-        <td>varies by ADU</td>
-        <td>parallel ADU permits</td>
-        <td><strong>Highest-upside pitch</strong> &mdash; nearly doubles doors</td>
-      </tr>
-      <tr>
-        <td><strong>D. State Density Bonus overlay</strong><br><span class="footer-note">Stackable w/ A&ndash;C</span></td>
-        <td>10&ndash;12</td>
-        <td>8 base + bonus units w/ 15&ndash;20% affordable set-aside</td>
-        <td>Standard CDP + State concessions</td>
-        <td>standard</td>
-        <td>standard</td>
-        <td>Back-pocket lever; affordability appetite required</td>
-      </tr>
-      <tr style="background:#fbeaea">
-        <td><strong>E. Convert MF &rarr; SFR</strong><br><span class="footer-note">Not recommended</span></td>
-        <td>1 + ADUs</td>
-        <td>Single-family rebuild</td>
-        <td>Replacement ADUs required (SB 166 no-net-loss)</td>
-        <td>&mdash;</td>
-        <td>&mdash;</td>
-        <td>Loses MF entitlement premium &mdash; only for ultra-luxury owner-user</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="path-grid">
+    <div class="path-card pa">
+      <div class="ph">
+        <div class="ptag">Pathway A &middot; Rebuild</div>
+        <div class="pname">Like-for-Like + 10%</div>
+        <div class="punits">8 units &middot; ~5,592 SF</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>Ord. 524 in-kind replacement on substantially the same footprint, CDP-exempt.</li>
+        <li>Planning Verification or Administrative Plan Review &mdash; no public hearing.</li>
+        <li>Fastest path: rebuild &amp; lease, or rebuild &amp; flip the permits.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Approval</span><span class="v">CDP-exempt</span></div>
+      <div class="pmetric"><span class="l">Timeline</span><span class="v">1 wk &ndash; 6 mo</span></div>
+      <div class="pmetric"><span class="l">Fees</span><span class="v">from $200</span></div>
+    </div>
+    <div class="path-card pb">
+      <div class="ph">
+        <div class="ptag">Pathway B &middot; Redesign</div>
+        <div class="pname">Full CDP / Expanded</div>
+        <div class="punits">8 units redesigned &middot; larger SF</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>Relocated footprint, larger envelope or a new luxury / condo layout.</li>
+        <li>Exceeds the +10% in-kind threshold, so a full Coastal Development Permit applies.</li>
+        <li>Best for a repositioned, high-finish product on the ocean-view frontage.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Approval</span><span class="v">CDP + hearing</span></div>
+      <div class="pmetric"><span class="l">Timeline</span><span class="v">12&ndash;24 mo</span></div>
+      <div class="pmetric"><span class="l">Fees</span><span class="v">~$11,579 base</span></div>
+    </div>
+    <div class="path-card pc">
+      <div class="ph">
+        <div class="ptag">Pathway C &middot; Density Stack</div>
+        <div class="pname">8 Base + Detached ADUs</div>
+        <div class="punits">up to 16 doors</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>Malibu's pending ZTA-25-003 raises the detached-ADU cap on MF parcels to 8.</li>
+        <li>Each ADU permits on a 60-day CDP clock &mdash; no public hearing, no Coastal appeal.</li>
+        <li>Highest-upside pitch: nearly doubles doors at the same land basis.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Approval</span><span class="v">60-day CDP / ADU</span></div>
+      <div class="pmetric"><span class="l">Timeline</span><span class="v">Parallel permits</span></div>
+      <div class="pmetric"><span class="l">Status</span><span class="v">ZTA pending</span></div>
+    </div>
+    <div class="path-card pd">
+      <div class="ph">
+        <div class="ptag">Pathway D &middot; State Bonus</div>
+        <div class="pname">State Density Bonus</div>
+        <div class="punits">10&ndash;12 units</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>8-unit base plus bonus units with a 15&ndash;20% affordable set-aside.</li>
+        <li>State concessions on standards; stackable with Pathways A&ndash;C.</li>
+        <li>Back-pocket lever for a buyer with an affordability appetite.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Approval</span><span class="v">CDP + concessions</span></div>
+      <div class="pmetric"><span class="l">Timeline</span><span class="v">Standard</span></div>
+      <div class="pmetric"><span class="l">Set-aside</span><span class="v">15&ndash;20% aff.</span></div>
+    </div>
   </div>
+  <div class="info-callout"><strong>How to read these:</strong> Pathway A is the by-right, CDP-exempt rebuild that underwrites the land basis on its own. Pathways B&ndash;D are programmatic upside &mdash; B trades time for a higher-finish product, C is the doors-doubling story riding Malibu's pending ADU code, and D layers state-bonus density for a buyer willing to take affordable units. A fifth option &mdash; converting the multifamily site to a single-family residence &mdash; is <em>not</em> recommended: SB 166 no-net-loss would require replacement ADUs and it forfeits the multifamily entitlement premium that anchors this valuation.</div>
 
   <div class="sb-callout">
     <h3>Speed Lever &mdash; the 30-Day Permit Goal</h3>
-    <p>Governor's Executive Orders <strong>N-4-25</strong> and <strong>N-20-25</strong> direct a <strong>30-day permit processing goal</strong> for 2025 fire rebuilds and suspend CEQA + California Coastal Act review for qualifying disaster replacement structures. Combined with Ordinance 524's CDP exemption for in-kind replacement, Pathway A can move from application to plan-check in weeks &mdash; a unique edge in the coastal zone.</p>
+    <p>Governor's Executive Orders N-4-25 and N-20-25 direct a 30-day permit processing goal for 2025 fire rebuilds and suspend CEQA + California Coastal Act review for qualifying disaster replacement structures. Combined with Ordinance 524's CDP exemption for in-kind replacement, Pathway A can move from application to plan-check in weeks &mdash; a unique edge in the coastal zone.</p>
   </div>
 
   <h3>Density Stack (Pathway C) &mdash; the Doors-Doubling Story</h3>
-  <p>Malibu's draft <strong>ZTA-25-003</strong> raises the detached-ADU cap on multifamily parcels from 2 to <strong>8</strong>. Layered on the 8-unit Ord. 524 rebuild base, the parcel could deliver up to <strong>16 doors</strong> &mdash; underwriting a meaningful step-up in $/door value at the same land basis. Each ADU permits on a <strong>60-day CDP clock</strong> with no public hearing and no Coastal Commission appeal. Standard rules: 4-ft side/rear setbacks; 1 parking space per ADU (with multifamily / transit-adjacent exemptions).</p>
+  <p>Malibu's draft ZTA-25-003 raises the detached-ADU cap on multifamily parcels from 2 to 8. Layered on the 8-unit Ord. 524 rebuild base, the parcel could deliver up to 16 doors &mdash; underwriting a meaningful step-up in $/door value at the same land basis. Each ADU permits on a 60-day CDP clock with no public hearing and no Coastal Commission appeal. Standard rules: 4-ft side/rear setbacks; 1 parking space per ADU (with multifamily / transit-adjacent exemptions).</p>
 
   <p class="footer-note">Sources: City of Malibu Ordinance No. 524 (3/12/2025); LCP Amendment certified by Coastal Commission 4/10/2025; Governor's Executive Orders N-4-25 and N-20-25; Malibu draft ZTA-25-003 (MF ADU cap update); SB 166 (Gov. Code &sect; 65863) &middot; SB 330 (Gov. Code &sect; 66300). Pathway summaries are informational and do not constitute legal advice; buyer and counsel to confirm parcel-specific eligibility, setbacks, parking and CDP treatment with the City of Malibu.</p>
   <div class="needs-input"><strong>&#9873; Confirmation items still open:</strong> (1) ZTA-25-003 adoption status / hearing date, (2) site-plan check that the 0.45 ac can physically site up to 8 detached ADUs alongside the 8-unit base, (3) parcel-side relative to PCH and FEMA Base Flood Elevation (changes the wave-action / replacement-structure exemption story).</div>
@@ -503,17 +572,17 @@
 
 <section id="comps">
   <h2>Comparable Sales &amp; Market Pricing</h2>
-  <p>Pricing is framed against the <strong>Pacific Coast Highway land trades</strong> that establish what the parcel is worth in the corridor. Additional comparable sets &mdash; finished small-multifamily building sales and rent comparables &mdash; will be added as supplied by the listing team.</p>
+  <p>Pricing is framed against the Pacific Coast Highway land trades that establish what the parcel is worth in the corridor. Additional comparable sets &mdash; finished small-multifamily building sales and rent comparables &mdash; will be added as supplied by the listing team.</p>
 
   <div class="sb-callout">
     <h3>Two PCH Land Trades Anchor the $/SF Basis</h3>
-    <p><strong>22141 Pacific Coast Hwy</strong> (APN 4451-008-018) sold <strong>12/18/2017 for $4,900,000</strong> as <strong>vacant residential land</strong> &mdash; no structures, no entitlements. The parcel is <strong>20,351 SF (0.47 ac)</strong>, two doors east of the subject in the same APN book. <strong>$4,900,000 &divide; 20,351 SF = $241 / land SF</strong>. Current assessed value $5,575,361 reflects Prop 13 escalation off the 2017 basis. Canadian land-bank buyer (Marthas, Aunt Chip; Toronto).</p>
-    <p><strong>22611 Pacific Coast Hwy</strong> (APN 4452-023-016) sold <strong>7/23/2024 for $1,586,500</strong> &mdash; a 6,916 SF (0.16 ac) commercial parcel with a 1945-vintage 838 SF tear-down office, ~5 blocks east of the subject. <strong>$1,586,500 &divide; 6,916 SF = $229 / land SF</strong>. Trade closed roughly six months pre-fire.</p>
-    <p><strong>Two independent PCH trades, seven years apart, converge on $229&ndash;$241 / land SF</strong> &mdash; a tight bracket that anchors the corridor's inland-land basis. The subject's $3,000,000 recommendation prices the parcel at <strong>$153 / land SF</strong> &mdash; a <strong>33&ndash;36% discount</strong> to those trades, consistent with documented post-fire distress on Malibu fire-impacted parcels. The recommendation is <strong>conservative-to-defensible</strong> on the downside, with material step-up potential once the 8-unit MF entitlement and Ordinance 524 rebuild rights are credited in negotiation &mdash; neither of which applied to the 2017 or 2024 trades.</p>
+    <p>22141 Pacific Coast Hwy (APN 4451-008-018) sold 12/18/2017 for $4,900,000 as vacant residential land &mdash; no structures, no entitlements. The parcel is 20,351 SF (0.47 ac), two doors east of the subject in the same APN book, pricing at $241 / land SF. Current assessed value $5,575,361 reflects Prop 13 escalation off the 2017 basis. Canadian land-bank buyer (Marthas, Aunt Chip; Toronto).</p>
+    <p>22611 Pacific Coast Hwy (APN 4452-023-016) sold 7/23/2024 for $1,586,500 &mdash; a 6,916 SF (0.16 ac) commercial parcel with a 1945-vintage 838 SF tear-down office, ~5 blocks east of the subject, pricing at $229 / land SF. The trade closed roughly six months pre-fire.</p>
+    <p>Two independent PCH trades, seven years apart, converge on $229&ndash;$241 / land SF &mdash; a tight bracket that anchors the corridor's inland-land basis. The subject's $3,000,000 recommendation prices the parcel at $153 / land SF &mdash; a 33&ndash;36% discount to those trades, consistent with documented post-fire distress on Malibu fire-impacted parcels. The recommendation is conservative-to-defensible on the downside, with material step-up potential once the 8-unit MF entitlement and Ordinance 524 rebuild rights are credited in negotiation &mdash; neither of which applied to the 2017 or 2024 trades.</p>
   </div>
 
   <h3>Pacific Coast Highway Land Comparables</h3>
-  <p style="font-size:13.5px;color:#555;margin-bottom:14px">The comp set is anchored by two PCH land trades that converge tightly on the corridor's $/SF basis: <strong>22141 PCH</strong> &mdash; same-block, same-APN-book, same lot size, raw vacant land &mdash; and <strong>22611 PCH</strong>, the most recent inland-PCH land trade in the corridor. Additional comparables will be added as the listing team supplies them.</p>
+  <p style="font-size:13.5px;color:#555;margin-bottom:14px">The comp set is anchored by two PCH land trades that converge tightly on the corridor's $/SF basis: 22141 PCH &mdash; same-block, same-APN-book, same lot size, raw vacant land &mdash; and 22611 PCH, the most recent inland-PCH land trade in the corridor. Additional comparables will be added as the listing team supplies them.</p>
   <div class="scroll">
   <table>
     <thead>
@@ -535,7 +604,7 @@
         <td><strong>20,351</strong> (0.47 ac)</td>
         <td><strong>$4,900,000</strong></td>
         <td class="psf-hot">$241</td>
-        <td>Pure raw-land trade (no structures, no entitlements). Current assessed $5,575,361. Canadian holding-co buyer (Toronto). <strong>The gold-standard comp.</strong></td>
+        <td>Pure raw-land trade (no structures, no entitlements). Current assessed $5,575,361. Canadian holding-co buyer (Toronto). The gold-standard comp.</td>
         <td>12/18/2017</td>
       </tr>
       <tr style="background:#fff7e6;border-bottom:2px solid #b8985a">
@@ -544,13 +613,13 @@
         <td><strong>6,916</strong> (0.16 ac)</td>
         <td><strong>$1,586,500</strong></td>
         <td class="psf-hot">$229</td>
-        <td>Pre-fire 2024 trade; small commercial parcel with tear-down 838 SF office (1945). Current assessed $3,000,000. <strong>Confirms the ~$230&ndash;$241 / SF PCH land basis.</strong></td>
+        <td>Pre-fire 2024 trade; small commercial parcel with tear-down 838 SF office (1945). Current assessed $3,000,000. Confirms the ~$230&ndash;$241 / SF PCH land basis.</td>
         <td>7/23/2024</td>
       </tr>
     </tbody>
   </table>
   </div>
-  <p class="footer-note">Sources: 22141 PCH and 22611 PCH per LA County Assessor / LightBox (22141 sale 12/18/2017 $4,900,000; current assessed $5,575,361 / 22611 sale 7/23/2024 $1,586,500; current assessed $3,000,000); 22611 flyer per The SK Group of Marcus &amp; Millichap. <strong>Two independent PCH land trades, seven years apart, converging on $229&ndash;$241 / land SF.</strong> Additional Malibu development &amp; rebuild-lot comparables to be added as supplied by the listing team.</p>
+  <p class="footer-note">Sources: 22141 PCH and 22611 PCH per LA County Assessor / LightBox (22141 sale 12/18/2017 $4,900,000; current assessed $5,575,361 / 22611 sale 7/23/2024 $1,586,500; current assessed $3,000,000); 22611 flyer per The SK Group of Marcus &amp; Millichap. Two independent PCH land trades, seven years apart, converging on $229&ndash;$241 / land SF. Additional Malibu development &amp; rebuild-lot comparables to be added as supplied by the listing team.</p>
 </section>
 
 <section id="pricing">
@@ -587,9 +656,9 @@
       <div class="math-row"><span>Less: construction loan interest + tax/ins (carry)</span><strong style="color:#a02020">($537,002)</strong></div>
       <div class="math-row"><span>Less: land basis</span><strong style="color:#a02020">($3,000,000)</strong></div>
       <div class="math-row total" style="border-top:2px solid #1f6b35;color:#1f6b35"><span>Developer profit @ $3.0M land</span><strong>$1,786,000</strong></div>
-      <div class="math-row sub" style="margin-top:8px"><span>&middot; Profit margin on total cost</span><span style="color:#1f6b35"><strong>~21%</strong></span></div>
+      <div class="math-row sub" style="margin-top:8px"><span>&middot; Profit margin on sellout</span><span style="color:#1f6b35"><strong>~21%</strong></span></div>
       <div class="math-row sub"><span>&middot; Developer cap on cost (NOI &divide; total cost)</span><span>~6.1%</span></div>
-      <p class="footer-note" style="margin-top:12px"><strong>Notes:</strong> carry = construction loan interest (8% over a 2-year build) + property tax &amp; insurance, per the workbook holding-cost schedule. At a $3.0M land basis the developer earns ~$1.79M profit (~21% on cost) &mdash; a market return that supports the recommended land value.</p>
+      <p class="footer-note" style="margin-top:12px"><strong>Notes:</strong> carry = construction loan interest (8% over a 2-year build) + property tax &amp; insurance, per the workbook holding-cost schedule. At a $3.0M land basis the developer earns ~$1.79M profit (~21% on the $8.64M net sellout) &mdash; a market return that supports the recommended land value.</p>
     </div>
 
   </div>
@@ -613,10 +682,102 @@
   <div class="needs-input"><strong>&#9873; Validation:</strong> the $9.0M finished value, $6,000/mo rents and $375/SF construction cost drive this residual &mdash; each to be confirmed against Malibu finished-MF sales, current market rents and current Malibu construction bids before the price is finalized.</div>
 </section>
 
+<section id="profit">
+  <div class="section-tag">Project Math</div>
+  <h2>Interactive Project Math &mdash; Build Your Own Scenario</h2>
+  <p>Three rebuild programs are modeled side by side: a by-right rebuild of the existing density, the same rebuild with Ordinance 524's +10% fire-rebuild bonus, and the +10% rebuild with a detached-ADU addition. Every white field is editable &mdash; change the shared assumptions or any program's inputs and the developer profit recalculates instantly. Defaults trace the seller's land-residual workbook.</p>
+
+  <div class="calc-assume">
+    <div class="ca-title">Shared Assumptions &mdash; apply to all three programs</div>
+    <div class="ca-grid">
+      <div class="calc-field"><label>Land basis</label><div class="inwrap"><span class="pre">$</span><input type="number" id="g_land" value="3000000" step="50000"></div></div>
+      <div class="calc-field"><label>Hard cost / SF</label><div class="inwrap"><span class="pre">$</span><input type="number" id="g_hard" value="375" step="5"></div></div>
+      <div class="calc-field"><label>Soft cost (% of hard)</label><div class="inwrap"><input type="number" id="g_soft" value="20" step="1"><span class="post">%</span></div></div>
+      <div class="calc-field"><label>Parking / space</label><div class="inwrap"><span class="pre">$</span><input type="number" id="g_park" value="50000" step="5000"></div></div>
+      <div class="calc-field"><label>Carry (% of cost + land)</label><div class="inwrap"><input type="number" id="g_carry" value="8.5" step="0.5"><span class="post">%</span></div></div>
+      <div class="calc-field"><label>Vacancy &amp; collection</label><div class="inwrap"><input type="number" id="g_vac" value="3" step="0.5"><span class="post">%</span></div></div>
+      <div class="calc-field"><label>Operating expenses (% GOI)</label><div class="inwrap"><input type="number" id="g_opex" value="31.3" step="0.5"><span class="post">%</span></div></div>
+      <div class="calc-field"><label>Cost of sale</label><div class="inwrap"><input type="number" id="g_cos" value="4" step="0.5"><span class="post">%</span></div></div>
+    </div>
+    <button type="button" class="calc-reset" id="calc_reset">&#8635; Reset to workbook defaults</button>
+  </div>
+
+  <div class="calc-grid">
+
+    <div class="calc-col s1">
+      <div class="cc-head"><div class="cc-tag">Program 1 &middot; By-Right</div><div class="cc-name">Existing-Density Rebuild</div><span class="cc-base">8 doors</span></div>
+      <div class="cc-inputs">
+        <div class="calc-field"><label>Residential units</label><div class="inwrap"><input type="number" id="s1_units" value="8" step="1"></div></div>
+        <div class="calc-field"><label>Building SF</label><div class="inwrap"><input type="number" id="s1_sf" value="5084" step="50"></div></div>
+        <div class="calc-field"><label>Rent / unit / mo</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s1_rent" value="5800" step="100"></div></div>
+        <div class="calc-field"><label>Finished value / unit</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s1_vunit" value="1080000" step="25000"></div></div>
+        <div class="calc-field"><label>Parking spaces</label><div class="inwrap"><input type="number" id="s1_park" value="16" step="1"></div></div>
+      </div>
+      <div class="cc-out">
+        <div class="or"><span class="l">Scheduled gross income</span><span class="v" id="s1_sgi">$556,800</span></div>
+        <div class="or"><span class="l">Net operating income</span><span class="v" id="s1_noi">$371,046</span></div>
+        <div class="or"><span class="l">Implied cap on value</span><span class="v" id="s1_cap">4.3%</span></div>
+        <div class="or"><span class="l">Finished value</span><span class="v" id="s1_fv">$8,640,000</span></div>
+        <div class="or"><span class="l">All-in cost (excl. land)</span><span class="v" id="s1_cost">$3,605,263</span></div>
+        <div class="or"><span class="l">Land basis</span><span class="v" id="s1_land">$3,000,000</span></div>
+      </div>
+      <div class="cc-profit"><div class="pl">Developer Profit</div><div class="pv" id="s1_profit">$1,689,137</div><div class="ps"><span id="s1_margin">20.4%</span> margin on sellout &middot; 8 doors</div></div>
+    </div>
+
+    <div class="calc-col s2">
+      <div class="cc-head"><div class="cc-tag">Program 2 &middot; By-Right + 10%</div><div class="cc-name">Ord. 524 Fire-Rebuild Bonus</div><span class="cc-base">Base case &middot; 8 doors</span></div>
+      <div class="cc-inputs">
+        <div class="calc-field"><label>Residential units</label><div class="inwrap"><input type="number" id="s2_units" value="8" step="1"></div></div>
+        <div class="calc-field"><label>Building SF (+10%)</label><div class="inwrap"><input type="number" id="s2_sf" value="5592" step="50"></div></div>
+        <div class="calc-field"><label>Rent / unit / mo</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s2_rent" value="6000" step="100"></div></div>
+        <div class="calc-field"><label>Finished value / unit</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s2_vunit" value="1125000" step="25000"></div></div>
+        <div class="calc-field"><label>Parking spaces</label><div class="inwrap"><input type="number" id="s2_park" value="16" step="1"></div></div>
+      </div>
+      <div class="cc-out">
+        <div class="or"><span class="l">Scheduled gross income</span><span class="v" id="s2_sgi">$576,000</span></div>
+        <div class="or"><span class="l">Net operating income</span><span class="v" id="s2_noi">$383,841</span></div>
+        <div class="or"><span class="l">Implied cap on value</span><span class="v" id="s2_cap">4.3%</span></div>
+        <div class="or"><span class="l">Finished value</span><span class="v" id="s2_fv">$9,000,000</span></div>
+        <div class="or"><span class="l">All-in cost (excl. land)</span><span class="v" id="s2_cost">$3,853,294</span></div>
+        <div class="or"><span class="l">Land basis</span><span class="v" id="s2_land">$3,000,000</span></div>
+      </div>
+      <div class="cc-profit"><div class="pl">Developer Profit</div><div class="pv" id="s2_profit">$1,786,706</div><div class="ps"><span id="s2_margin">20.7%</span> margin on sellout &middot; 8 doors</div></div>
+    </div>
+
+    <div class="calc-col s3">
+      <div class="cc-head"><div class="cc-tag">Program 3 &middot; + ADU Addition</div><div class="cc-name">+10% Rebuild + Detached ADUs</div><span class="cc-base">up to 16 doors</span></div>
+      <div class="cc-inputs">
+        <div class="calc-field"><label>Base residential units</label><div class="inwrap"><input type="number" id="s3_units" value="8" step="1"></div></div>
+        <div class="calc-field"><label>Base building SF</label><div class="inwrap"><input type="number" id="s3_sf" value="5592" step="50"></div></div>
+        <div class="calc-field"><label>Base rent / unit / mo</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_rent" value="6000" step="100"></div></div>
+        <div class="calc-field"><label>Base value / unit</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_vunit" value="1125000" step="25000"></div></div>
+        <div class="calc-field"><label>Parking spaces</label><div class="inwrap"><input type="number" id="s3_park" value="16" step="1"></div></div>
+        <div class="cc-subhd">ADU Addition</div>
+        <div class="calc-field"><label>Number of ADUs</label><div class="inwrap"><input type="number" id="s3_adu_n" value="8" step="1"></div></div>
+        <div class="calc-field"><label>SF per ADU</label><div class="inwrap"><input type="number" id="s3_adu_sf" value="500" step="25"></div></div>
+        <div class="calc-field"><label>ADU rent / mo</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_adu_rent" value="4500" step="100"></div></div>
+        <div class="calc-field"><label>Finished value / ADU</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_adu_val" value="425000" step="25000"></div></div>
+      </div>
+      <div class="cc-out">
+        <div class="or"><span class="l">Scheduled gross income</span><span class="v" id="s3_sgi">$1,008,000</span></div>
+        <div class="or"><span class="l">Net operating income</span><span class="v" id="s3_noi">$671,621</span></div>
+        <div class="or"><span class="l">Implied cap on value</span><span class="v" id="s3_cap">5.4%</span></div>
+        <div class="or"><span class="l">Finished value</span><span class="v" id="s3_fv">$12,400,000</span></div>
+        <div class="or"><span class="l">All-in cost (excl. land)</span><span class="v" id="s3_cost">$5,806,294</span></div>
+        <div class="or"><span class="l">Land basis</span><span class="v" id="s3_land">$3,000,000</span></div>
+      </div>
+      <div class="cc-profit"><div class="pl">Developer Profit</div><div class="pv" id="s3_profit">$3,097,706</div><div class="ps"><span id="s3_margin">26.0%</span> margin on sellout &middot; 16 doors</div></div>
+    </div>
+
+  </div>
+  <p class="footer-note">All-in cost = hard + parking + soft + carry, excluding land. Finished value = units &times; value/unit (plus ADUs &times; value/ADU). Carry is modeled as a percentage of development cost plus land. Defaults reproduce the seller's land-residual workbook base case (Program 2: 8 units, &plusmn;5,592 SF, $9.0M finished value, ~$1.79M profit). The by-right and ADU programs are illustrative extensions a buyer can re-underwrite with their own assumptions.</p>
+  <div class="needs-input"><strong>&#9873; Validation:</strong> rents, finished values, construction costs and the ADU count/value are modeled inputs &mdash; to be confirmed against Malibu finished-MF and ADU sale comps, current market rents and current construction bids, and (for the ADU program) against ZTA-25-003 adoption, before any scenario is represented to a buyer.</div>
+</section>
+
 <section>
   <div class="section-tag">Broker Opinion of Value</div>
   <h2>Pricing Recommendation</h2>
-  <p>As a development / rebuild parcel, value is land-residual driven and cross-checked against the finished 8-unit building the site supports. At the recommended basis the parcel prices at <strong>$153 / land SF</strong> while leaving a developer ~21% profit on the stabilized $9.0M exit &mdash; a balanced position that supports a clean execution and a deep coastal-developer buyer pool.</p>
+  <p>As a development / rebuild parcel, value is land-residual driven and cross-checked against the finished 8-unit building the site supports. At the recommended basis the parcel prices at $153 / land SF while leaving a developer ~21% profit on the stabilized $9.0M exit &mdash; a balanced position that supports a clean execution and a deep coastal-developer buyer pool.</p>
 
   <div class="recommend">
     <h3>Recommended List Price</h3>
@@ -634,7 +795,7 @@
         <div class="pc-sub">$153 / land SF &mdash; ~21% developer profit on the exit</div>
       </div>
     </div>
-    <p style="margin-top:14px;margin-bottom:0;font-size:14px"><strong>Rationale:</strong> at <strong>$3,000,000</strong> the parcel is priced as a rebuild-ready development site. Three independent anchors converge on this value: <strong>(1)</strong> the same-block 2017 trade at <strong>22141 PCH</strong> &mdash; an essentially identical lot two doors east &mdash; closed at $4,900,000 raw, supporting the recommendation as a meaningful discount even before adjusting for 2017&ndash;2024 land appreciation and crediting the subject for its preserved 8-unit MF entitlement; <strong>(2)</strong> the developer's residual: a developer delivering the 8-unit, &plusmn;5,592 SF building for ~$3.3M of cost (plus carry) and selling the stabilized asset for $9.0M earns roughly <strong>$1.79M of profit (~21% on cost)</strong> at this land basis; and <strong>(3)</strong> Ordinance 524's like-for-like + 10% rebuild right, SB 166 density protection, and irreplaceable PCH frontage that anchor the entitlement value. The same-block comp positions $3.0M as <strong>conservative-to-defensible</strong> with material step-up potential in negotiation.</p>
+    <p style="margin-top:14px;margin-bottom:0;font-size:14px"><strong>Rationale:</strong> at $3,000,000 the parcel is priced as a rebuild-ready development site. Three independent anchors converge on this value: (1) the same-block 2017 trade at 22141 PCH &mdash; an essentially identical lot two doors east &mdash; closed at $4,900,000 raw, supporting the recommendation as a meaningful discount even before adjusting for 2017&ndash;2024 land appreciation and crediting the subject for its preserved 8-unit MF entitlement; (2) the developer's residual: a developer delivering the 8-unit, &plusmn;5,592 SF building for ~$3.3M of cost (plus carry) and selling the stabilized asset for $9.0M earns roughly $1.79M of profit (~21% on the sellout) at this land basis; and (3) Ordinance 524's like-for-like + 10% rebuild right, SB 166 density protection, and irreplaceable PCH frontage that anchor the entitlement value. The same-block comp positions $3.0M as conservative-to-defensible with material step-up potential in negotiation.</p>
   </div>
   <div class="needs-input"><strong>&#9873; Note:</strong> the recommendation will be finalized against the land, finished-MF and rent comp sets once supplied by the listing team, and against confirmation of the Ordinance 524 rebuild eligibility and prior-structure size.</div>
 </section>
@@ -663,7 +824,7 @@
 <section id="inventory">
   <div class="section-tag">LAAA Inventory</div>
   <h2>LAAA Land &amp; Development Pipeline</h2>
-  <p>The LA Apartment Advisors Team maintains one of the most active land &amp; development listing practices in Southern California &mdash; <strong>19 active land / development listings</strong> spanning by-right infill sites, ED1 mixed-use, RTI projects, small-lot subdivisions and coastal rebuild opportunities. <strong>22159 Pacific Coast Highway</strong> joins that pipeline as the team's rare Malibu ocean-view rebuild parcel.</p>
+  <p>The LA Apartment Advisors Team maintains one of the most active land &amp; development listing practices in Southern California &mdash; 19 active land / development listings spanning by-right infill sites, ED1 mixed-use, RTI projects, small-lot subdivisions and coastal rebuild opportunities. 22159 Pacific Coast Highway joins that pipeline as the team's rare Malibu ocean-view rebuild parcel.</p>
 
   <div class="stat-row">
     <div class="stat-box"><div class="stat-num">19</div><div class="stat-lbl">Active Land /<br>Dev Listings</div></div>
@@ -719,7 +880,7 @@
 <section id="team">
   <div class="section-tag">Exclusively Listed By</div>
   <h2>The LAAA Team &amp; The SK Group</h2>
-  <p>This offering is exclusively listed by the <strong>LA Apartment Advisors (LAAA) Team</strong> and <strong>The SK Group</strong> at Marcus &amp; Millichap &mdash; among Southern California's most active multifamily and development-land investment sales practices.</p>
+  <p>This offering is exclusively listed by the LA Apartment Advisors (LAAA) Team and The SK Group at Marcus &amp; Millichap &mdash; among Southern California's most active multifamily and development-land investment sales practices.</p>
 
   <h3 style="margin-top:24px">Combined Team Track Record</h3>
   <div class="stat-row">
@@ -853,6 +1014,61 @@
     });
   }, { rootMargin: '-80px 0px -65% 0px', threshold: 0 });
   document.querySelectorAll('section[id]').forEach(function(s){ io.observe(s); });
+})();
+
+// Interactive Project Math calculator
+(function(){
+  var calc = document.getElementById('profit');
+  if (!calc || !document.getElementById('g_land')) return;
+  var DEFAULTS = {
+    g_land:3000000, g_hard:375, g_soft:20, g_park:50000, g_carry:8.5, g_vac:3, g_opex:31.3, g_cos:4,
+    s1_units:8, s1_sf:5084, s1_rent:5800, s1_vunit:1080000, s1_park:16,
+    s2_units:8, s2_sf:5592, s2_rent:6000, s2_vunit:1125000, s2_park:16,
+    s3_units:8, s3_sf:5592, s3_rent:6000, s3_vunit:1125000, s3_park:16,
+    s3_adu_n:8, s3_adu_sf:500, s3_adu_rent:4500, s3_adu_val:425000
+  };
+  function num(id){ var el=document.getElementById(id); if(!el) return 0; var v=parseFloat(el.value); return isNaN(v)?0:v; }
+  function usd(n){ return '$'+Math.round(n).toLocaleString('en-US'); }
+  function pct(n){ return (n*100).toFixed(1)+'%'; }
+  function setv(id,t){ var el=document.getElementById(id); if(el) el.textContent=t; }
+  function run(p, hasAdu){
+    var land=num('g_land'), hard=num('g_hard'), soft=num('g_soft')/100, parkcost=num('g_park'),
+        carryR=num('g_carry')/100, vac=num('g_vac')/100, opex=num('g_opex')/100, cos=num('g_cos')/100;
+    var units=num(p+'_units'), sf=num(p+'_sf'), rent=num(p+'_rent'), vunit=num(p+'_vunit'), park=num(p+'_park');
+    var aN=0,aSf=0,aRent=0,aVal=0;
+    if(hasAdu){ aN=num(p+'_adu_n'); aSf=num(p+'_adu_sf'); aRent=num(p+'_adu_rent'); aVal=num(p+'_adu_val'); }
+    var totalSf = sf + aN*aSf;
+    var sgi = units*rent*12 + aN*aRent*12;
+    var goi = sgi*(1-vac);
+    var noi = goi*(1-opex);
+    var fv = units*vunit + aN*aVal;
+    var net = fv*(1-cos);
+    var hardCost = totalSf*hard;
+    var parking = park*parkcost;
+    var softCost = hardCost*soft;
+    var devCost = hardCost+parking+softCost;
+    var carry = carryR*(devCost+land);
+    var allIn = devCost+carry;
+    var profit = net - allIn - land;
+    var margin = net>0 ? profit/net : 0;
+    var cap = fv>0 ? noi/fv : 0;
+    setv(p+'_sgi', usd(sgi));
+    setv(p+'_noi', usd(noi));
+    setv(p+'_cap', pct(cap));
+    setv(p+'_fv', usd(fv));
+    setv(p+'_cost', usd(allIn));
+    setv(p+'_land', usd(land));
+    setv(p+'_profit', usd(profit));
+    setv(p+'_margin', pct(margin));
+  }
+  function recalc(){ run('s1',false); run('s2',false); run('s3',true); }
+  calc.addEventListener('input', function(e){ if(e.target && e.target.tagName==='INPUT') recalc(); });
+  var reset = document.getElementById('calc_reset');
+  if(reset) reset.addEventListener('click', function(){
+    Object.keys(DEFAULTS).forEach(function(k){ var el=document.getElementById(k); if(el) el.value=DEFAULTS[k]; });
+    recalc();
+  });
+  recalc();
 })();
 </script>
 
