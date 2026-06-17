@@ -262,10 +262,8 @@
     #comp-map{height:280px}
     a{color:#0a4a8a;text-decoration:none}
   }
-  .hero-banner{width:100%;height:520px;background-image:url('images/hero_rendering.png');background-size:cover;background-position:center;background-color:#0a2540;border-bottom:4px solid #b8985a;position:relative}
-  .hero-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,37,64,0.35))}
-  @media (max-width:760px){.hero-banner{height:320px}}
-  @media (max-width:640px){.hero-banner{height:220px}}
+  .hero-banner{width:100%;background:#0a2540;border-bottom:4px solid #b8985a;text-align:center;line-height:0}
+  .hero-banner img{display:block;width:100%;height:auto;max-width:1000px;margin:0 auto}
   .pdf-cover,.pdf-toc{display:none}
   .pdf-float-btn{position:fixed;bottom:24px;right:24px;z-index:9999;padding:14px 28px;background:#b8985a;color:#0a2540;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.35);display:flex;align-items:center;gap:8px;transition:background .14s ease,transform .14s ease}
   .pdf-float-btn:hover{background:#fff;transform:translateY(-2px)}
@@ -350,7 +348,7 @@
   </div>
 </header>
 
-<div class="hero-banner" role="img" aria-label="22159 Pacific Coast Highway — site Street View"></div>
+<div class="hero-banner"><img src="images/hero_rendering.png" alt="22159 Pacific Coast Highway — building rendering"></div>
 
 <nav class="section-nav" aria-label="Section navigation">
   <div class="wrap">
