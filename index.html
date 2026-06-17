@@ -695,18 +695,18 @@
         <div class="calc-field"><label>Residential units</label><div class="inwrap"><input type="number" id="s1_units" value="8" step="1"></div></div>
         <div class="calc-field"><label>Building SF</label><div class="inwrap"><input type="number" id="s1_sf" value="5084" step="50"></div></div>
         <div class="calc-field"><label>Rent / unit / mo</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s1_rent" value="4500" step="100"></div></div>
-        <div class="calc-field"><label>Finished value / unit</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s1_vunit" value="1080000" step="25000"></div></div>
+        <div class="calc-field"><label>Finished value</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s1_fval" value="8000000" step="100000"></div></div>
         <div class="calc-field"><label>Parking spaces</label><div class="inwrap"><input type="number" id="s1_park" value="0" step="1"></div></div>
       </div>
       <div class="cc-out">
         <div class="or"><span class="l">Scheduled gross income</span><span class="v" id="s1_sgi">$432,000</span></div>
         <div class="or"><span class="l">Net operating income</span><span class="v" id="s1_noi">$287,880</span></div>
-        <div class="or"><span class="l">Implied cap on value</span><span class="v" id="s1_cap">3.3%</span></div>
-        <div class="or"><span class="l">Finished value</span><span class="v" id="s1_fv">$8,640,000</span></div>
+        <div class="or"><span class="l">Implied cap on value</span><span class="v" id="s1_cap">3.6%</span></div>
+        <div class="or"><span class="l">Net sale (less cost of sale)</span><span class="v" id="s1_net">$7,680,000</span></div>
         <div class="or"><span class="l">All-in cost (excl. land)</span><span class="v" id="s1_cost">$2,737,263</span></div>
         <div class="or"><span class="l">Land basis</span><span class="v" id="s1_land">$3,000,000</span></div>
       </div>
-      <div class="cc-profit"><div class="pl">Developer Profit</div><div class="pv" id="s1_profit">$2,557,137</div><div class="ps"><span id="s1_margin">30.8%</span> margin on sellout &middot; 8 doors</div></div>
+      <div class="cc-profit"><div class="pl">Developer Profit</div><div class="pv" id="s1_profit">$1,942,737</div><div class="ps"><span id="s1_margin">25.3%</span> margin on sellout &middot; 8 doors</div></div>
     </div>
 
     <div class="calc-col s2">
@@ -715,18 +715,18 @@
         <div class="calc-field"><label>Residential units</label><div class="inwrap"><input type="number" id="s2_units" value="8" step="1"></div></div>
         <div class="calc-field"><label>Building SF (+10%)</label><div class="inwrap"><input type="number" id="s2_sf" value="5592" step="50"></div></div>
         <div class="calc-field"><label>Rent / unit / mo</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s2_rent" value="5000" step="100"></div></div>
-        <div class="calc-field"><label>Finished value / unit</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s2_vunit" value="1125000" step="25000"></div></div>
+        <div class="calc-field"><label>Finished value</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s2_fval" value="8500000" step="100000"></div></div>
         <div class="calc-field"><label>Parking spaces</label><div class="inwrap"><input type="number" id="s2_park" value="0" step="1"></div></div>
       </div>
       <div class="cc-out">
         <div class="or"><span class="l">Scheduled gross income</span><span class="v" id="s2_sgi">$480,000</span></div>
         <div class="or"><span class="l">Net operating income</span><span class="v" id="s2_noi">$319,867</span></div>
-        <div class="or"><span class="l">Implied cap on value</span><span class="v" id="s2_cap">3.6%</span></div>
-        <div class="or"><span class="l">Finished value</span><span class="v" id="s2_fv">$9,000,000</span></div>
+        <div class="or"><span class="l">Implied cap on value</span><span class="v" id="s2_cap">3.8%</span></div>
+        <div class="or"><span class="l">Net sale (less cost of sale)</span><span class="v" id="s2_net">$8,160,000</span></div>
         <div class="or"><span class="l">All-in cost (excl. land)</span><span class="v" id="s2_cost">$2,985,294</span></div>
         <div class="or"><span class="l">Land basis</span><span class="v" id="s2_land">$3,000,000</span></div>
       </div>
-      <div class="cc-profit"><div class="pl">Developer Profit</div><div class="pv" id="s2_profit">$2,654,706</div><div class="ps"><span id="s2_margin">30.7%</span> margin on sellout &middot; 8 doors</div></div>
+      <div class="cc-profit"><div class="pl">Developer Profit</div><div class="pv" id="s2_profit">$2,174,706</div><div class="ps"><span id="s2_margin">26.7%</span> margin on sellout &middot; 8 doors</div></div>
     </div>
 
     <div class="calc-col s3">
@@ -735,27 +735,28 @@
         <div class="calc-field"><label>Base residential units</label><div class="inwrap"><input type="number" id="s3_units" value="8" step="1"></div></div>
         <div class="calc-field"><label>Base building SF</label><div class="inwrap"><input type="number" id="s3_sf" value="5592" step="50"></div></div>
         <div class="calc-field"><label>Base rent / unit / mo</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_rent" value="6000" step="100"></div></div>
-        <div class="calc-field"><label>Base value / unit</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_vunit" value="1125000" step="25000"></div></div>
+        <div class="calc-field"><label>Base finished value</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_fval" value="8500000" step="100000"></div></div>
         <div class="calc-field"><label>Parking spaces</label><div class="inwrap"><input type="number" id="s3_park" value="16" step="1"></div></div>
         <div class="cc-subhd">ADU Addition</div>
         <div class="calc-field"><label>Number of ADUs</label><div class="inwrap"><input type="number" id="s3_adu_n" value="8" step="1"></div></div>
         <div class="calc-field"><label>SF per ADU</label><div class="inwrap"><input type="number" id="s3_adu_sf" value="500" step="25"></div></div>
         <div class="calc-field"><label>ADU rent / mo</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_adu_rent" value="4500" step="100"></div></div>
-        <div class="calc-field"><label>Finished value / ADU</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_adu_val" value="425000" step="25000"></div></div>
+        <div class="calc-field"><label>Finished value / ADU</label><div class="inwrap"><span class="pre">$</span><input type="number" id="s3_adu_val" value="750000" step="25000"></div></div>
       </div>
       <div class="cc-out">
         <div class="or"><span class="l">Scheduled gross income</span><span class="v" id="s3_sgi">$1,008,000</span></div>
         <div class="or"><span class="l">Net operating income</span><span class="v" id="s3_noi">$671,621</span></div>
-        <div class="or"><span class="l">Implied cap on value</span><span class="v" id="s3_cap">5.4%</span></div>
-        <div class="or"><span class="l">Finished value</span><span class="v" id="s3_fv">$12,400,000</span></div>
+        <div class="or"><span class="l">Implied cap on value</span><span class="v" id="s3_cap">4.6%</span></div>
+        <div class="or"><span class="l">Total finished value (incl. ADUs)</span><span class="v" id="s3_fv">$14,500,000</span></div>
+        <div class="or"><span class="l">Net sale (less cost of sale)</span><span class="v" id="s3_net">$13,920,000</span></div>
         <div class="or"><span class="l">All-in cost (excl. land)</span><span class="v" id="s3_cost">$5,806,294</span></div>
         <div class="or"><span class="l">Land basis</span><span class="v" id="s3_land">$3,000,000</span></div>
       </div>
-      <div class="cc-profit"><div class="pl">Developer Profit</div><div class="pv" id="s3_profit">$3,097,706</div><div class="ps"><span id="s3_margin">26.0%</span> margin on sellout &middot; 16 doors</div></div>
+      <div class="cc-profit"><div class="pl">Developer Profit</div><div class="pv" id="s3_profit">$5,113,706</div><div class="ps"><span id="s3_margin">36.7%</span> margin on sellout &middot; 16 doors</div></div>
     </div>
 
   </div>
-  <p class="footer-note">All-in cost = hard + parking + soft + carry, excluding land. Finished value = units &times; value/unit (plus ADUs &times; value/ADU). Carry is modeled as a percentage of development cost plus land. The default inputs are illustrative starting points (Program 2 is the 8-unit, &plusmn;5,592 SF, $9.0M-finished Ord. 524 rebuild); every field is editable, so a buyer can re-underwrite each program with their own rents, finished values, construction costs and parking.</p>
+  <p class="footer-note">All-in cost = hard + parking + soft + carry, excluding land. Net sale = finished value less the cost of sale. For Program 3, total finished value = base finished value + (ADUs &times; value per ADU). Carry is modeled as a percentage of development cost plus land. The default inputs are illustrative starting points; every field is editable, so a buyer can re-underwrite each program with their own rents, finished values, construction costs and parking.</p>
   <div class="needs-input"><strong>&#9873; Validation:</strong> rents, finished values, construction costs and the ADU count/value are modeled inputs &mdash; to be confirmed against Malibu finished-MF and ADU sale comps, current market rents and current construction bids, and (for the ADU program) against ZTA-25-003 adoption, before any scenario is represented to a buyer.</div>
 </section>
 
@@ -1007,10 +1008,10 @@
   if (!calc || !document.getElementById('g_land')) return;
   var DEFAULTS = {
     g_land:3000000, g_hard:375, g_soft:20, g_park:50000, g_carry:8.5, g_vac:3, g_opex:31.3, g_cos:4,
-    s1_units:8, s1_sf:5084, s1_rent:4500, s1_vunit:1080000, s1_park:0,
-    s2_units:8, s2_sf:5592, s2_rent:5000, s2_vunit:1125000, s2_park:0,
-    s3_units:8, s3_sf:5592, s3_rent:6000, s3_vunit:1125000, s3_park:16,
-    s3_adu_n:8, s3_adu_sf:500, s3_adu_rent:4500, s3_adu_val:425000
+    s1_units:8, s1_sf:5084, s1_rent:4500, s1_fval:8000000, s1_park:0,
+    s2_units:8, s2_sf:5592, s2_rent:5000, s2_fval:8500000, s2_park:0,
+    s3_units:8, s3_sf:5592, s3_rent:6000, s3_fval:8500000, s3_park:16,
+    s3_adu_n:8, s3_adu_sf:500, s3_adu_rent:4500, s3_adu_val:750000
   };
   function num(id){ var el=document.getElementById(id); if(!el) return 0; var v=parseFloat(el.value); return isNaN(v)?0:v; }
   function usd(n){ return '$'+Math.round(n).toLocaleString('en-US'); }
@@ -1019,14 +1020,14 @@
   function run(p, hasAdu){
     var land=num('g_land'), hard=num('g_hard'), soft=num('g_soft')/100, parkcost=num('g_park'),
         carryR=num('g_carry')/100, vac=num('g_vac')/100, opex=num('g_opex')/100, cos=num('g_cos')/100;
-    var units=num(p+'_units'), sf=num(p+'_sf'), rent=num(p+'_rent'), vunit=num(p+'_vunit'), park=num(p+'_park');
+    var units=num(p+'_units'), sf=num(p+'_sf'), rent=num(p+'_rent'), fval=num(p+'_fval'), park=num(p+'_park');
     var aN=0,aSf=0,aRent=0,aVal=0;
     if(hasAdu){ aN=num(p+'_adu_n'); aSf=num(p+'_adu_sf'); aRent=num(p+'_adu_rent'); aVal=num(p+'_adu_val'); }
     var totalSf = sf + aN*aSf;
     var sgi = units*rent*12 + aN*aRent*12;
     var goi = sgi*(1-vac);
     var noi = goi*(1-opex);
-    var fv = units*vunit + aN*aVal;
+    var fv = fval + aN*aVal;
     var net = fv*(1-cos);
     var hardCost = totalSf*hard;
     var parking = park*parkcost;
@@ -1041,6 +1042,7 @@
     setv(p+'_noi', usd(noi));
     setv(p+'_cap', pct(cap));
     setv(p+'_fv', usd(fv));
+    setv(p+'_net', usd(net));
     setv(p+'_cost', usd(allIn));
     setv(p+'_land', usd(land));
     setv(p+'_profit', usd(profit));
